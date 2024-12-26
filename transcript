@@ -1,0 +1,2381 @@
+# 
+# 
+# 
+# 
+# //  Questa Sim-64
+# //  Version 2022.2_1 linux_x86_64 May 19 2022
+# //
+# //  Copyright 1991-2022 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+do run.do
+# QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+# Start time: 14:21:11 on Jun 29,2024
+# vlog -reportprogress 300 "+incdir+/home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src" top.sv 
+# -- Compiling package uvm_pkg
+# ** Error: ** while parsing file included at top.sv(10)
+# ** at mem_env.sv(6): Invalid type 'ahb_agent'. Please check the type of the variable 'ahb_agent_h'.
+# ** Error: ** while parsing file included at top.sv(10)
+# ** at mem_env.sv(17): (vlib-2730) Undefined variable: 'ahb_agent_h'.
+# ** Error: ** while parsing file included at top.sv(10)
+# ** at mem_env.sv(17): (vlib-2164) Class or package 'ahb_agent' not found.
+# ** Error: ** while parsing file included at top.sv(10)
+# ** at mem_env.sv(17): (vlib-2730) Undefined variable: 'ahb_agent'.
+# ** Error: (vlib-13069) ** while parsing file included at top.sv(10)
+# ** at mem_env.sv(17): near "::": syntax error, unexpected ::, expecting ';'.
+# End time: 14:21:12 on Jun 29,2024, Elapsed time: 0:00:01
+# Errors: 5, Warnings: 0
+# ** Error: /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/linux_x86_64/vlog failed.
+# Error in macro ./run.do line 2
+# /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/linux_x86_64/vlog failed.
+#     while executing
+# "vlog +incdir+/home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src top.sv"
+do run.do
+# QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+# Start time: 14:21:58 on Jun 29,2024
+# vlog -reportprogress 300 "+incdir+/home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src" top.sv 
+# -- Compiling package uvm_pkg
+# -- Compiling package top_sv_unit
+# -- Importing package uvm_pkg
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 14:22:00 on Jun 29,2024, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# vsim -novopt -suppress 12110 top -sv_lib /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/uvm-1.2/linux_x86_64/uvm_dpi "+UVM_TESTNAME=mem_base_test" 
+# Start time: 14:22:00 on Jun 29,2024
+# Loading /tmp/koushiks@vlsiguru5_dpi_222516/linux_x86_64_gcc-7.4.0/export_tramp.so
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.top_sv_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.uvm_pkg
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.uvm_pkg
+# Loading work.top_sv_unit
+# Loading work.top
+# Compiling /tmp/koushiks@vlsiguru5_dpi_222516/linux_x86_64_gcc-7.4.0/exportwrapper.c
+# Loading /tmp/koushiks@vlsiguru5_dpi_222516/linux_x86_64_gcc-7.4.0/vsim_auto_compile.so
+# Loading /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/uvm-1.2/linux_x86_64/uvm_dpi.so
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test mem_base_test...
+# UVM_INFO test_lib.sv(14) @ 0: uvm_test_top [MEM_BASE_TEST] build_phase of MEM_BASE_TEST
+# UVM_INFO mem_env.sv(15) @ 0: uvm_test_top.mem_env_h [MEM_ENV] build_phase of MEM_ENV
+# UVM_INFO ahb_agent.sv(16) @ 0: uvm_test_top.mem_env_h.ahb_agent_h [ahb_agent] build_phase of ahb_agent
+# UVM_INFO ahb_drv.sv(12) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_drv_h [ahb_drv] build_phase of ahb_drv
+# UVM_INFO ahb_sqr.sv(11) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_sqr_h [ahb_sqr] build_phase of ahb_sqr
+# UVM_INFO mem_agent.sv(16) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] build_phase of MEM_AGENT
+# UVM_INFO mem_drv.sv(12) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [MEM_DRV] build_phase of MEM_DRV
+# UVM_INFO mem_sqr.sv(11) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h [MEM_SQR] build_phase of MEM_SQR
+# UVM_INFO ahb_agent.sv(24) @ 0: uvm_test_top.mem_env_h.ahb_agent_h [ahb_agent] connect_phase of ahb_agent
+# UVM_INFO mem_agent.sv(24) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] connect_phase of MEM_AGENT
+# UVM_INFO test_lib.sv(24) @ 0: uvm_test_top [MEM_BASE_TEST] run_phase of MEM_BASE_TEST
+# UVM_INFO mem_drv.sv(16) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [MEM_DRV] run_phase of MEM_DRV
+# UVM_INFO ahb_drv.sv(16) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_drv_h [ahb_drv] run_phase of ahb_drv
+# UVM_INFO sequence_lib.sv(8) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@seq [MEM_BASE_SEQ] pre_body of MEM_BASE_SEQ
+# UVM_INFO sequence_lib.sv(12) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@seq [MEM_BASE_SEQ] body of MEM_BASE_SEQ
+# UVM_INFO sequence_lib.sv(16) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@seq [MEM_BASE_SEQ] post_phase of MEM_BASE_SEQ
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_objection.svh(1270) @ 100: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_report_server.svh(847) @ 100: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   19
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [MEM_AGENT]     2
+# [MEM_BASE_SEQ]     3
+# [MEM_BASE_TEST]     2
+# [MEM_DRV]     2
+# [MEM_ENV]     1
+# [MEM_SQR]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVM/RELNOTES]     1
+# [ahb_agent]     2
+# [ahb_drv]     2
+# [ahb_sqr]     1
+# 
+# ** Note: $finish    : /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 100 ns  Iteration: 67  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh line 517
+do run.do
+# QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+# Start time: 14:24:18 on Jun 29,2024
+# vlog -reportprogress 300 "+incdir+/home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src" top.sv 
+# -- Compiling package uvm_pkg
+# -- Compiling package top_sv_unit
+# -- Importing package uvm_pkg
+# ** Error: test_lib.sv(19): Virtual method 'end_of_elaboration' has more arguments than the method in class 'uvm_component' or a return type mismatch
+# -- Compiling module top
+# End time: 14:24:20 on Jun 29,2024, Elapsed time: 0:00:02
+# Errors: 1, Warnings: 0
+# ** Error: /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/linux_x86_64/vlog failed.
+# Error in macro ./run.do line 2
+# /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/linux_x86_64/vlog failed.
+#     while executing
+# "vlog +incdir+/home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src top.sv"
+do run.do
+# QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+# Start time: 14:25:12 on Jun 29,2024
+# vlog -reportprogress 300 "+incdir+/home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src" top.sv 
+# -- Compiling package uvm_pkg
+# -- Compiling package top_sv_unit
+# -- Importing package uvm_pkg
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 14:25:13 on Jun 29,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 14:25:15 on Jun 29,2024, Elapsed time: 0:03:15
+# Errors: 1, Warnings: 1
+# vsim -novopt -suppress 12110 top -sv_lib /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/uvm-1.2/linux_x86_64/uvm_dpi "+UVM_TESTNAME=mem_base_test" 
+# Start time: 14:25:15 on Jun 29,2024
+# Loading /tmp/koushiks@vlsiguru5_dpi_222894/linux_x86_64_gcc-7.4.0/export_tramp.so
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.top_sv_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.uvm_pkg
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.uvm_pkg
+# Loading work.top_sv_unit
+# Loading work.top
+# Compiling /tmp/koushiks@vlsiguru5_dpi_222894/linux_x86_64_gcc-7.4.0/exportwrapper.c
+# Loading /tmp/koushiks@vlsiguru5_dpi_222894/linux_x86_64_gcc-7.4.0/vsim_auto_compile.so
+# Loading /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/uvm-1.2/linux_x86_64/uvm_dpi.so
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test mem_base_test...
+# UVM_INFO test_lib.sv(14) @ 0: uvm_test_top [MEM_BASE_TEST] build_phase of MEM_BASE_TEST
+# UVM_INFO mem_env.sv(15) @ 0: uvm_test_top.mem_env_h [MEM_ENV] build_phase of MEM_ENV
+# UVM_INFO ahb_agent.sv(16) @ 0: uvm_test_top.mem_env_h.ahb_agent_h [ahb_agent] build_phase of ahb_agent
+# UVM_INFO ahb_drv.sv(12) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_drv_h [ahb_drv] build_phase of ahb_drv
+# UVM_INFO ahb_sqr.sv(11) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_sqr_h [ahb_sqr] build_phase of ahb_sqr
+# UVM_INFO mem_agent.sv(16) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] build_phase of MEM_AGENT
+# UVM_INFO mem_drv.sv(12) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [MEM_DRV] build_phase of MEM_DRV
+# UVM_INFO mem_sqr.sv(11) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h [MEM_SQR] build_phase of MEM_SQR
+# UVM_INFO ahb_agent.sv(24) @ 0: uvm_test_top.mem_env_h.ahb_agent_h [ahb_agent] connect_phase of ahb_agent
+# UVM_INFO mem_agent.sv(24) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] connect_phase of MEM_AGENT
+# UVM_INFO test_lib.sv(20) @ 0: uvm_test_top [MEM_BASE_TEST] TB structure = --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               mem_base_test           -     @334 
+#   mem_env_h                mem_env                 -     @349 
+#     ahb_agent_h            ahb_agent               -     @369 
+#       ahb_drv_h            ahb_drv                 -     @518 
+#         rsp_port           uvm_analysis_port       -     @537 
+#         seq_item_port      uvm_seq_item_pull_port  -     @527 
+#       ahb_sqr_h            ahb_sqr                 -     @381 
+#         rsp_export         uvm_analysis_export     -     @390 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @508 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     mem_agent_h            mem_agent               -     @360 
+#       mem_drv_h            mem_drv                 -     @696 
+#         rsp_port           uvm_analysis_port       -     @715 
+#         seq_item_port      uvm_seq_item_pull_port  -     @705 
+#       mem_sqr_h            mem_sqr                 -     @559 
+#         rsp_export         uvm_analysis_export     -     @568 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @686 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+# --------------------------------------------------------------
+# 
+# UVM_INFO test_lib.sv(28) @ 0: uvm_test_top [MEM_BASE_TEST] run_phase of MEM_BASE_TEST
+# UVM_INFO mem_drv.sv(16) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [MEM_DRV] run_phase of MEM_DRV
+# UVM_INFO ahb_drv.sv(16) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_drv_h [ahb_drv] run_phase of ahb_drv
+# UVM_INFO sequence_lib.sv(8) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@seq [MEM_BASE_SEQ] pre_body of MEM_BASE_SEQ
+# UVM_INFO sequence_lib.sv(12) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@seq [MEM_BASE_SEQ] body of MEM_BASE_SEQ
+# UVM_INFO sequence_lib.sv(16) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@seq [MEM_BASE_SEQ] post_phase of MEM_BASE_SEQ
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_objection.svh(1270) @ 100: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_report_server.svh(847) @ 100: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   20
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [MEM_AGENT]     2
+# [MEM_BASE_SEQ]     3
+# [MEM_BASE_TEST]     3
+# [MEM_DRV]     2
+# [MEM_ENV]     1
+# [MEM_SQR]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVM/RELNOTES]     1
+# [ahb_agent]     2
+# [ahb_drv]     2
+# [ahb_sqr]     1
+# 
+# ** Note: $finish    : /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 100 ns  Iteration: 67  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh line 517
+do run.do
+# QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+# Start time: 15:02:50 on Jun 29,2024
+# vlog -reportprogress 300 "+incdir+/home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src" top.sv 
+# -- Compiling package uvm_pkg
+# -- Compiling package top_sv_unit
+# -- Importing package uvm_pkg
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 15:02:51 on Jun 29,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 15:02:53 on Jun 29,2024, Elapsed time: 0:37:38
+# Errors: 0, Warnings: 1
+# vsim -novopt -suppress 12110 top -sv_lib /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/uvm-1.2/linux_x86_64/uvm_dpi "+UVM_TESTNAME=mem_base_test" 
+# Start time: 15:02:53 on Jun 29,2024
+# Loading /tmp/koushiks@vlsiguru5_dpi_228095/linux_x86_64_gcc-7.4.0/export_tramp.so
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.top_sv_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.uvm_pkg
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.uvm_pkg
+# Loading work.top_sv_unit
+# Loading work.top
+# Compiling /tmp/koushiks@vlsiguru5_dpi_228095/linux_x86_64_gcc-7.4.0/exportwrapper.c
+# Loading /tmp/koushiks@vlsiguru5_dpi_228095/linux_x86_64_gcc-7.4.0/vsim_auto_compile.so
+# Loading /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/uvm-1.2/linux_x86_64/uvm_dpi.so
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test mem_base_test...
+# UVM_INFO test_lib.sv(14) @ 0: uvm_test_top [MEM_BASE_TEST] build_phase of MEM_BASE_TEST
+# UVM_INFO mem_env.sv(15) @ 0: uvm_test_top.mem_env_h [MEM_ENV] build_phase of MEM_ENV
+# UVM_INFO ahb_agent.sv(16) @ 0: uvm_test_top.mem_env_h.ahb_agent_h [ahb_agent] build_phase of ahb_agent
+# UVM_INFO ahb_drv.sv(12) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_drv_h [ahb_drv] build_phase of ahb_drv
+# UVM_INFO ahb_sqr.sv(11) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_sqr_h [ahb_sqr] build_phase of ahb_sqr
+# UVM_INFO mem_agent.sv(17) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] build_phase of MEM_AGENT
+# UVM_ERROR mem_agent.sv(21) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] FAILED to get the COUNT value from UVM_CONFIG_DB
+# UVM_INFO mem_drv.sv(12) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [MEM_DRV] build_phase of MEM_DRV
+# UVM_INFO mem_sqr.sv(11) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h [MEM_SQR] build_phase of MEM_SQR
+# UVM_INFO ahb_agent.sv(24) @ 0: uvm_test_top.mem_env_h.ahb_agent_h [ahb_agent] connect_phase of ahb_agent
+# UVM_INFO mem_agent.sv(31) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] connect_phase of MEM_AGENT
+# UVM_FATAL @ 0: reporter [BUILDERR] stopping due to build errors
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_report_server.svh(847) @ 0: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   12
+# UVM_WARNING :    0
+# UVM_ERROR :    1
+# UVM_FATAL :    1
+# ** Report counts by id
+# [BUILDERR]     1
+# [MEM_AGENT]     3
+# [MEM_BASE_TEST]     1
+# [MEM_DRV]     1
+# [MEM_ENV]     1
+# [MEM_SQR]     1
+# [RNTST]     1
+# [UVM/RELNOTES]     1
+# [ahb_agent]     2
+# [ahb_drv]     1
+# [ahb_sqr]     1
+# 
+# ** Note: $finish    : /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh(135)
+#    Time: 0 ns  Iteration: 28  Region: /uvm_pkg::uvm_phase::m_run_phases
+# 1
+# Break in Function uvm_pkg/uvm_root::die at /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh line 135
+do run.do
+# QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+# Start time: 15:04:39 on Jun 29,2024
+# vlog -reportprogress 300 "+incdir+/home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src" top.sv 
+# -- Compiling package uvm_pkg
+# ** Error: ** while parsing file included at top.sv(12)
+# ** at mem_agent.sv(36): (vlog-2730) Undefined variable: 'edtask'.
+# ** Error: (vlog-13069) ** while parsing file included at top.sv(12)
+# ** at mem_agent.sv(38): near "endclass": syntax error, unexpected endclass.
+# ** Error: ** while parsing file included at top.sv(13)
+# ** while parsing macro expansion: 'uvm_component_utils' starting at ahb_agent.sv(3)
+# ** at ahb_agent.sv(3): (vlog-2730) Undefined variable: 'ahb_agent'.
+# ** Warning: ** while parsing file included at top.sv(13)
+# ** while parsing macro expansion: 'uvm_component_utils' starting at ahb_agent.sv(3)
+# ** at ahb_agent.sv(3): (vlog-2953) Incorrect usage of keyword 'static'.
+# ** Error: (vlog-13069) ** while parsing file included at top.sv(13)
+# ** while parsing macro expansion: 'uvm_component_utils' starting at ahb_agent.sv(3)
+# ** at ahb_agent.sv(3): near "function": syntax error, unexpected function, expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
+# ** Error: (vlog-13069) ** while parsing file included at top.sv(13)
+# ** while parsing macro expansion: 'uvm_component_utils' starting at ahb_agent.sv(3)
+# ** at ahb_agent.sv(3): near "endfunction": syntax error, unexpected endfunction, expecting endtask.
+# ** Error: (vlog-13069) ** while parsing file included at top.sv(13)
+# ** while parsing macro expansion: 'uvm_component_utils' starting at ahb_agent.sv(3)
+# ** at ahb_agent.sv(3): near "endfunction": syntax error, unexpected endfunction, expecting endtask.
+# ** Error: ** while parsing file included at top.sv(13)
+# ** at ahb_agent.sv(8): Illegal declaration after the statement near line '3'.  Declarations must precede statements.  Look for stray semicolons.
+# ** Error: ** while parsing file included at top.sv(13)
+# ** at ahb_agent.sv(9): 'super.new()' call can be made only from within a class constructor.
+# ** Error: (vlog-13069) ** while parsing file included at top.sv(13)
+# ** at ahb_agent.sv(10): near "endfunction": syntax error, unexpected endfunction, expecting endtask.
+# ** Error: (vlog-13069) ** while parsing file included at top.sv(13)
+# ** at ahb_agent.sv(19): near "endfunction": syntax error, unexpected endfunction, expecting endtask.
+# ** Error: (vlog-13069) ** while parsing file included at top.sv(13)
+# ** at ahb_agent.sv(26): near "endfunction": syntax error, unexpected endfunction, expecting endtask.
+# ** Error: ** while parsing file included at top.sv(14)
+# ** while parsing macro expansion: 'uvm_component_utils' starting at mem_env.sv(3)
+# ** at mem_env.sv(3): (vlog-2730) Undefined variable: 'mem_env'.
+# ** Error: ** while parsing file included at top.sv(14)
+# ** while parsing macro expansion: 'uvm_component_utils' starting at mem_env.sv(3)
+# ** at mem_env.sv(3): Typedef 'type_id' multiply defined.
+# ** Error: ** while parsing file included at top.sv(14)
+# ** while parsing macro expansion: 'uvm_component_utils' starting at mem_env.sv(3)
+# ** at mem_env.sv(3): 'get_type' already exists; must not be redefined as a function.
+# ** Warning: ** while parsing file included at top.sv(14)
+# ** while parsing macro expansion: 'uvm_component_utils' starting at mem_env.sv(3)
+# ** at mem_env.sv(3): (vlog-2953) Incorrect usage of keyword 'static'.
+# ** Error: (vlog-13069) ** while parsing file included at top.sv(14)
+# ** while parsing macro expansion: 'uvm_component_utils' starting at mem_env.sv(3)
+# ** at mem_env.sv(3): near "function": syntax error, unexpected function, expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
+# ** Error: (vlog-13069) ** while parsing file included at top.sv(14)
+# ** while parsing macro expansion: 'uvm_component_utils' starting at mem_env.sv(3)
+# ** at mem_env.sv(3): near "endfunction": syntax error, unexpected endfunction, expecting endtask.
+# ** Error: (vlog-13069) ** while parsing file included at top.sv(14)
+# ** while parsing macro expansion: 'uvm_component_utils' starting at mem_env.sv(3)
+# ** at mem_env.sv(3): near "endfunction": syntax error, unexpected endfunction, expecting endtask.
+# ** Error: ** while parsing file included at top.sv(14)
+# ** at mem_env.sv(6): Illegal declaration after the statement near line '3'.  Declarations must precede statements.  Look for stray semicolons.
+# ** Error: ** while parsing file included at top.sv(14)
+# ** at mem_env.sv(9): 'super.new()' call can be made only from within a class constructor.
+# ** Error: (vlog-13069) ** while parsing file included at top.sv(14)
+# ** at mem_env.sv(10): near "endfunction": syntax error, unexpected endfunction, expecting endtask.
+# ** Error: ** while parsing file included at top.sv(14)
+# ** at mem_env.sv(17): (vlog-2730) Undefined variable: 'ahb_agent_h'.
+# ** Error: ** while parsing file included at top.sv(14)
+# ** at mem_env.sv(17): (vlog-2164) Class or package 'ahb_agent' not found.
+# ** Error: (vlog-13069) ** while parsing file included at top.sv(14)
+# ** at mem_env.sv(17): near "::": syntax error, unexpected ::, expecting ';'.
+# ** Error: ** while parsing file included at top.sv(15)
+# ** while parsing macro expansion: 'uvm_component_utils' starting at test_lib.sv(3)
+# ** at test_lib.sv(3): (vlog-2730) Undefined variable: 'mem_base_test'.
+# ** Error: ** while parsing file included at top.sv(15)
+# ** while parsing macro expansion: 'uvm_component_utils' starting at test_lib.sv(3)
+# ** at test_lib.sv(3): Typedef 'type_id' multiply defined.
+# ** Error: ** while parsing file included at top.sv(15)
+# ** while parsing macro expansion: 'uvm_component_utils' starting at test_lib.sv(3)
+# ** at test_lib.sv(3): 'get_type' already exists; must not be redefined as a function.
+# ** Warning: ** while parsing file included at top.sv(15)
+# ** while parsing macro expansion: 'uvm_component_utils' starting at test_lib.sv(3)
+# ** at test_lib.sv(3): (vlog-2953) Incorrect usage of keyword 'static'.
+# ** Error: (vlog-13069) ** while parsing file included at top.sv(15)
+# ** while parsing macro expansion: 'uvm_component_utils' starting at test_lib.sv(3)
+# ** at test_lib.sv(3): near "function": syntax error, unexpected function, expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
+# ** Error: (vlog-13069) ** while parsing file included at top.sv(15)
+# ** while parsing macro expansion: 'uvm_component_utils' starting at test_lib.sv(3)
+# ** at test_lib.sv(3): near "endfunction": syntax error, unexpected endfunction, expecting endtask.
+# ** Error: (vlog-13069) ** while parsing file included at top.sv(15)
+# ** while parsing macro expansion: 'uvm_component_utils' starting at test_lib.sv(3)
+# ** at test_lib.sv(3): near "endfunction": syntax error, unexpected endfunction, expecting endtask.
+# ** Error: ** while parsing file included at top.sv(15)
+# ** at test_lib.sv(8): 'super.new()' call can be made only from within a class constructor.
+# ** Error: (vlog-13069) ** while parsing file included at top.sv(15)
+# ** at test_lib.sv(9): near "endfunction": syntax error, unexpected endfunction, expecting endtask.
+# ** Error: ** while parsing file included at top.sv(15)
+# ** at test_lib.sv(16): (vlog-2730) Undefined variable: 'mem_env_h'.
+# ** Error: ** while parsing file included at top.sv(15)
+# ** at test_lib.sv(16): (vlog-2164) Class or package 'mem_env' not found.
+# ** Error: (vlog-13069) ** while parsing file included at top.sv(15)
+# ** at test_lib.sv(16): near "::": syntax error, unexpected ::, expecting ';'.
+# ** Error: (vlog-13069) ** while parsing file included at top.sv(15)
+# ** at test_lib.sv(21): near "endfunction": syntax error, unexpected endfunction, expecting endtask.
+# ** Error: ** while parsing file included at top.sv(15)
+# ** at test_lib.sv(27): Illegal declaration after the statement near line '23'.  Declarations must precede statements.  Look for stray semicolons.
+# End time: 15:04:40 on Jun 29,2024, Elapsed time: 0:00:01
+# Errors: 36, Warnings: 3
+# ** Error: /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/linux_x86_64/vlog failed.
+# Error in macro ./run.do line 2
+# /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/linux_x86_64/vlog failed.
+#     while executing
+# "vlog +incdir+/home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src top.sv"
+do run.do
+# QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+# Start time: 15:04:55 on Jun 29,2024
+# vlog -reportprogress 300 "+incdir+/home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src" top.sv 
+# -- Compiling package uvm_pkg
+# -- Compiling package top_sv_unit
+# -- Importing package uvm_pkg
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 15:04:56 on Jun 29,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 15:04:59 on Jun 29,2024, Elapsed time: 0:02:06
+# Errors: 1, Warnings: 1
+# vsim -novopt -suppress 12110 top -sv_lib /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/uvm-1.2/linux_x86_64/uvm_dpi "+UVM_TESTNAME=mem_base_test" 
+# Start time: 15:04:59 on Jun 29,2024
+# Loading /tmp/koushiks@vlsiguru5_dpi_228398/linux_x86_64_gcc-7.4.0/export_tramp.so
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.top_sv_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.uvm_pkg
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.uvm_pkg
+# Loading work.top_sv_unit
+# Loading work.top
+# Compiling /tmp/koushiks@vlsiguru5_dpi_228398/linux_x86_64_gcc-7.4.0/exportwrapper.c
+# Loading /tmp/koushiks@vlsiguru5_dpi_228398/linux_x86_64_gcc-7.4.0/vsim_auto_compile.so
+# Loading /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/uvm-1.2/linux_x86_64/uvm_dpi.so
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test mem_base_test...
+# UVM_INFO test_lib.sv(14) @ 0: uvm_test_top [MEM_BASE_TEST] build_phase of MEM_BASE_TEST
+# UVM_INFO mem_env.sv(15) @ 0: uvm_test_top.mem_env_h [MEM_ENV] build_phase of MEM_ENV
+# UVM_INFO ahb_agent.sv(16) @ 0: uvm_test_top.mem_env_h.ahb_agent_h [ahb_agent] build_phase of ahb_agent
+# UVM_INFO ahb_drv.sv(12) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_drv_h [ahb_drv] build_phase of ahb_drv
+# UVM_INFO ahb_sqr.sv(11) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_sqr_h [ahb_sqr] build_phase of ahb_sqr
+# UVM_INFO mem_agent.sv(17) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] build_phase of MEM_AGENT
+# UVM_INFO mem_drv.sv(12) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [MEM_DRV] build_phase of MEM_DRV
+# UVM_INFO mem_sqr.sv(11) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h [MEM_SQR] build_phase of MEM_SQR
+# UVM_INFO ahb_agent.sv(24) @ 0: uvm_test_top.mem_env_h.ahb_agent_h [ahb_agent] connect_phase of ahb_agent
+# UVM_INFO mem_agent.sv(25) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] connect_phase of MEM_AGENT
+# UVM_INFO test_lib.sv(20) @ 0: uvm_test_top [MEM_BASE_TEST] TB structure = --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               mem_base_test           -     @334 
+#   mem_env_h                mem_env                 -     @353 
+#     ahb_agent_h            ahb_agent               -     @373 
+#       ahb_drv_h            ahb_drv                 -     @522 
+#         rsp_port           uvm_analysis_port       -     @541 
+#         seq_item_port      uvm_seq_item_pull_port  -     @531 
+#       ahb_sqr_h            ahb_sqr                 -     @385 
+#         rsp_export         uvm_analysis_export     -     @394 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @512 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     mem_agent_h            mem_agent               -     @364 
+#       mem_drv_h            mem_drv                 -     @700 
+#         rsp_port           uvm_analysis_port       -     @719 
+#         seq_item_port      uvm_seq_item_pull_port  -     @709 
+#       mem_sqr_h            mem_sqr                 -     @563 
+#         rsp_export         uvm_analysis_export     -     @572 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @690 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+# --------------------------------------------------------------
+# 
+# UVM_INFO test_lib.sv(28) @ 0: uvm_test_top [MEM_BASE_TEST] run_phase of MEM_BASE_TEST
+# UVM_ERROR mem_agent.sv(31) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] FAILED to get the COUNT value from UVM_CONFIG_DB
+# UVM_INFO mem_drv.sv(16) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [MEM_DRV] run_phase of MEM_DRV
+# UVM_INFO ahb_drv.sv(16) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_drv_h [ahb_drv] run_phase of ahb_drv
+# UVM_INFO sequence_lib.sv(8) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@seq [MEM_BASE_SEQ] pre_body of MEM_BASE_SEQ
+# UVM_INFO sequence_lib.sv(12) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@seq [MEM_BASE_SEQ] body of MEM_BASE_SEQ
+# UVM_INFO sequence_lib.sv(16) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@seq [MEM_BASE_SEQ] post_phase of MEM_BASE_SEQ
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_objection.svh(1270) @ 100: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_report_server.svh(847) @ 100: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   20
+# UVM_WARNING :    0
+# UVM_ERROR :    1
+# UVM_FATAL :    0
+# ** Report counts by id
+# [MEM_AGENT]     3
+# [MEM_BASE_SEQ]     3
+# [MEM_BASE_TEST]     3
+# [MEM_DRV]     2
+# [MEM_ENV]     1
+# [MEM_SQR]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVM/RELNOTES]     1
+# [ahb_agent]     2
+# [ahb_drv]     2
+# [ahb_sqr]     1
+# 
+# ** Note: $finish    : /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 100 ns  Iteration: 67  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh line 517
+do run.do
+# QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+# Start time: 15:07:19 on Jun 29,2024
+# vlog -reportprogress 300 "+incdir+/home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src" top.sv 
+# -- Compiling package uvm_pkg
+# -- Compiling package top_sv_unit
+# -- Importing package uvm_pkg
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 15:07:20 on Jun 29,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 15:07:23 on Jun 29,2024, Elapsed time: 0:02:24
+# Errors: 0, Warnings: 1
+# vsim -novopt -suppress 12110 top -sv_lib /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/uvm-1.2/linux_x86_64/uvm_dpi "+UVM_TESTNAME=mem_base_test" "+UVM_MAX_QUIT_COUNT=1" 
+# Start time: 15:07:23 on Jun 29,2024
+# Loading /tmp/koushiks@vlsiguru5_dpi_228868/linux_x86_64_gcc-7.4.0/export_tramp.so
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.top_sv_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.uvm_pkg
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.uvm_pkg
+# Loading work.top_sv_unit
+# Loading work.top
+# Compiling /tmp/koushiks@vlsiguru5_dpi_228868/linux_x86_64_gcc-7.4.0/exportwrapper.c
+# Loading /tmp/koushiks@vlsiguru5_dpi_228868/linux_x86_64_gcc-7.4.0/vsim_auto_compile.so
+# Loading /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/uvm-1.2/linux_x86_64/uvm_dpi.so
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test mem_base_test...
+# UVM_INFO @ 0: reporter [MAXQUITSET] '+UVM_MAX_QUIT_COUNT=1' provided on the command line is being applied.
+# UVM_INFO test_lib.sv(14) @ 0: uvm_test_top [MEM_BASE_TEST] build_phase of MEM_BASE_TEST
+# UVM_INFO mem_env.sv(15) @ 0: uvm_test_top.mem_env_h [MEM_ENV] build_phase of MEM_ENV
+# UVM_INFO ahb_agent.sv(16) @ 0: uvm_test_top.mem_env_h.ahb_agent_h [ahb_agent] build_phase of ahb_agent
+# UVM_INFO ahb_drv.sv(12) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_drv_h [ahb_drv] build_phase of ahb_drv
+# UVM_INFO ahb_sqr.sv(11) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_sqr_h [ahb_sqr] build_phase of ahb_sqr
+# UVM_INFO mem_agent.sv(17) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] build_phase of MEM_AGENT
+# UVM_INFO mem_drv.sv(12) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [MEM_DRV] build_phase of MEM_DRV
+# UVM_INFO mem_sqr.sv(11) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h [MEM_SQR] build_phase of MEM_SQR
+# UVM_INFO ahb_agent.sv(24) @ 0: uvm_test_top.mem_env_h.ahb_agent_h [ahb_agent] connect_phase of ahb_agent
+# UVM_INFO mem_agent.sv(25) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] connect_phase of MEM_AGENT
+# UVM_INFO test_lib.sv(20) @ 0: uvm_test_top [MEM_BASE_TEST] TB structure = --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               mem_base_test           -     @334 
+#   mem_env_h                mem_env                 -     @355 
+#     ahb_agent_h            ahb_agent               -     @375 
+#       ahb_drv_h            ahb_drv                 -     @524 
+#         rsp_port           uvm_analysis_port       -     @543 
+#         seq_item_port      uvm_seq_item_pull_port  -     @533 
+#       ahb_sqr_h            ahb_sqr                 -     @387 
+#         rsp_export         uvm_analysis_export     -     @396 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @514 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     mem_agent_h            mem_agent               -     @366 
+#       mem_drv_h            mem_drv                 -     @702 
+#         rsp_port           uvm_analysis_port       -     @721 
+#         seq_item_port      uvm_seq_item_pull_port  -     @711 
+#       mem_sqr_h            mem_sqr                 -     @565 
+#         rsp_export         uvm_analysis_export     -     @574 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @692 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+# --------------------------------------------------------------
+# 
+# UVM_INFO test_lib.sv(28) @ 0: uvm_test_top [MEM_BASE_TEST] run_phase of MEM_BASE_TEST
+# UVM_ERROR mem_agent.sv(31) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] FAILED to get the COUNT value from UVM_CONFIG_DB
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_report_server.svh(847) @ 0: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# Quit count reached!
+# Quit count :     1 of     1
+# ** Report counts by severity
+# UVM_INFO :   15
+# UVM_WARNING :    0
+# UVM_ERROR :    1
+# UVM_FATAL :    0
+# ** Report counts by id
+# [MAXQUITSET]     1
+# [MEM_AGENT]     3
+# [MEM_BASE_TEST]     3
+# [MEM_DRV]     1
+# [MEM_ENV]     1
+# [MEM_SQR]     1
+# [RNTST]     1
+# [UVM/RELNOTES]     1
+# [ahb_agent]     2
+# [ahb_drv]     1
+# [ahb_sqr]     1
+# 
+# ** Note: $finish    : /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh(135)
+#    Time: 0 ns  Iteration: 51  Region: /uvm_pkg::uvm_task_phase::execute
+# 1
+# Break in Function uvm_pkg/uvm_root::die at /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh line 135
+do run.do
+# QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+# Start time: 15:10:02 on Jun 29,2024
+# vlog -reportprogress 300 "+incdir+/home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src" top.sv 
+# -- Compiling package uvm_pkg
+# -- Compiling package top_sv_unit
+# -- Importing package uvm_pkg
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 15:10:04 on Jun 29,2024, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# End time: 15:10:06 on Jun 29,2024, Elapsed time: 0:02:43
+# Errors: 0, Warnings: 1
+# vsim -novopt -suppress 12110 top -sv_lib /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/uvm-1.2/linux_x86_64/uvm_dpi "+UVM_TESTNAME=mem_base_test" "+UVM_MAX_QUIT_COUNT=1" 
+# Start time: 15:10:06 on Jun 29,2024
+# Loading /tmp/koushiks@vlsiguru5_dpi_230142/linux_x86_64_gcc-7.4.0/export_tramp.so
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.top_sv_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.uvm_pkg
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.uvm_pkg
+# Loading work.top_sv_unit
+# Loading work.top
+# Compiling /tmp/koushiks@vlsiguru5_dpi_230142/linux_x86_64_gcc-7.4.0/exportwrapper.c
+# Loading /tmp/koushiks@vlsiguru5_dpi_230142/linux_x86_64_gcc-7.4.0/vsim_auto_compile.so
+# Loading /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/uvm-1.2/linux_x86_64/uvm_dpi.so
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test mem_base_test...
+# UVM_INFO @ 0: reporter [MAXQUITSET] '+UVM_MAX_QUIT_COUNT=1' provided on the command line is being applied.
+# UVM_INFO test_lib.sv(14) @ 0: uvm_test_top [MEM_BASE_TEST] build_phase of MEM_BASE_TEST
+# UVM_INFO mem_env.sv(15) @ 0: uvm_test_top.mem_env_h [MEM_ENV] build_phase of MEM_ENV
+# UVM_INFO ahb_agent.sv(16) @ 0: uvm_test_top.mem_env_h.ahb_agent_h [ahb_agent] build_phase of ahb_agent
+# UVM_INFO ahb_drv.sv(12) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_drv_h [ahb_drv] build_phase of ahb_drv
+# UVM_INFO ahb_sqr.sv(11) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_sqr_h [ahb_sqr] build_phase of ahb_sqr
+# UVM_INFO mem_agent.sv(17) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] build_phase of MEM_AGENT
+# UVM_INFO mem_drv.sv(12) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [MEM_DRV] build_phase of MEM_DRV
+# UVM_INFO mem_sqr.sv(11) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h [MEM_SQR] build_phase of MEM_SQR
+# UVM_INFO ahb_agent.sv(24) @ 0: uvm_test_top.mem_env_h.ahb_agent_h [ahb_agent] connect_phase of ahb_agent
+# UVM_INFO mem_agent.sv(25) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] connect_phase of MEM_AGENT
+# UVM_INFO test_lib.sv(20) @ 0: uvm_test_top [MEM_BASE_TEST] TB structure = --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               mem_base_test           -     @334 
+#   mem_env_h                mem_env                 -     @355 
+#     ahb_agent_h            ahb_agent               -     @375 
+#       ahb_drv_h            ahb_drv                 -     @524 
+#         rsp_port           uvm_analysis_port       -     @543 
+#         seq_item_port      uvm_seq_item_pull_port  -     @533 
+#       ahb_sqr_h            ahb_sqr                 -     @387 
+#         rsp_export         uvm_analysis_export     -     @396 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @514 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     mem_agent_h            mem_agent               -     @366 
+#       mem_drv_h            mem_drv                 -     @702 
+#         rsp_port           uvm_analysis_port       -     @721 
+#         seq_item_port      uvm_seq_item_pull_port  -     @711 
+#       mem_sqr_h            mem_sqr                 -     @565 
+#         rsp_export         uvm_analysis_export     -     @574 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @692 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+# --------------------------------------------------------------
+# 
+# UVM_INFO test_lib.sv(28) @ 0: uvm_test_top [MEM_BASE_TEST] run_phase of MEM_BASE_TEST
+# UVM_ERROR mem_agent.sv(31) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] FAILED to get the COUNT value from UVM_CONFIG_DB
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_report_server.svh(847) @ 0: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# Quit count reached!
+# Quit count :     1 of     1
+# ** Report counts by severity
+# UVM_INFO :   15
+# UVM_WARNING :    0
+# UVM_ERROR :    1
+# UVM_FATAL :    0
+# ** Report counts by id
+# [MAXQUITSET]     1
+# [MEM_AGENT]     3
+# [MEM_BASE_TEST]     3
+# [MEM_DRV]     1
+# [MEM_ENV]     1
+# [MEM_SQR]     1
+# [RNTST]     1
+# [UVM/RELNOTES]     1
+# [ahb_agent]     2
+# [ahb_drv]     1
+# [ahb_sqr]     1
+# 
+# ** Note: $finish    : /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh(135)
+#    Time: 0 ns  Iteration: 51  Region: /uvm_pkg::uvm_task_phase::execute
+# 1
+# Break in Function uvm_pkg/uvm_root::die at /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh line 135
+do run.do
+# QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+# Start time: 15:11:00 on Jun 29,2024
+# vlog -reportprogress 300 "+incdir+/home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src" top.sv 
+# -- Compiling package uvm_pkg
+# -- Compiling package top_sv_unit
+# -- Importing package uvm_pkg
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 15:11:01 on Jun 29,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 15:11:03 on Jun 29,2024, Elapsed time: 0:00:57
+# Errors: 0, Warnings: 1
+# vsim -novopt -suppress 12110 top -sv_lib /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/uvm-1.2/linux_x86_64/uvm_dpi "+UVM_TESTNAME=mem_base_test" "+UVM_MAX_QUIT_COUNT=1" 
+# Start time: 15:11:03 on Jun 29,2024
+# Loading /tmp/koushiks@vlsiguru5_dpi_230379/linux_x86_64_gcc-7.4.0/export_tramp.so
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.top_sv_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.uvm_pkg
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.uvm_pkg
+# Loading work.top_sv_unit
+# Loading work.top
+# Compiling /tmp/koushiks@vlsiguru5_dpi_230379/linux_x86_64_gcc-7.4.0/exportwrapper.c
+# Loading /tmp/koushiks@vlsiguru5_dpi_230379/linux_x86_64_gcc-7.4.0/vsim_auto_compile.so
+# Loading /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/uvm-1.2/linux_x86_64/uvm_dpi.so
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test mem_base_test...
+# UVM_INFO @ 0: reporter [MAXQUITSET] '+UVM_MAX_QUIT_COUNT=1' provided on the command line is being applied.
+# UVM_INFO test_lib.sv(14) @ 0: uvm_test_top [MEM_BASE_TEST] build_phase of MEM_BASE_TEST
+# UVM_INFO mem_env.sv(15) @ 0: uvm_test_top.mem_env_h [MEM_ENV] build_phase of MEM_ENV
+# UVM_INFO ahb_agent.sv(16) @ 0: uvm_test_top.mem_env_h.ahb_agent_h [ahb_agent] build_phase of ahb_agent
+# UVM_INFO ahb_drv.sv(12) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_drv_h [ahb_drv] build_phase of ahb_drv
+# UVM_INFO ahb_sqr.sv(11) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_sqr_h [ahb_sqr] build_phase of ahb_sqr
+# UVM_INFO mem_agent.sv(17) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] build_phase of MEM_AGENT
+# UVM_INFO mem_drv.sv(12) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [MEM_DRV] build_phase of MEM_DRV
+# UVM_INFO mem_sqr.sv(11) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h [MEM_SQR] build_phase of MEM_SQR
+# UVM_INFO ahb_agent.sv(24) @ 0: uvm_test_top.mem_env_h.ahb_agent_h [ahb_agent] connect_phase of ahb_agent
+# UVM_INFO mem_agent.sv(25) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] connect_phase of MEM_AGENT
+# UVM_INFO test_lib.sv(20) @ 0: uvm_test_top [MEM_BASE_TEST] TB structure = --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               mem_base_test           -     @334 
+#   mem_env_h                mem_env                 -     @355 
+#     ahb_agent_h            ahb_agent               -     @375 
+#       ahb_drv_h            ahb_drv                 -     @524 
+#         rsp_port           uvm_analysis_port       -     @543 
+#         seq_item_port      uvm_seq_item_pull_port  -     @533 
+#       ahb_sqr_h            ahb_sqr                 -     @387 
+#         rsp_export         uvm_analysis_export     -     @396 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @514 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     mem_agent_h            mem_agent               -     @366 
+#       mem_drv_h            mem_drv                 -     @702 
+#         rsp_port           uvm_analysis_port       -     @721 
+#         seq_item_port      uvm_seq_item_pull_port  -     @711 
+#       mem_sqr_h            mem_sqr                 -     @565 
+#         rsp_export         uvm_analysis_export     -     @574 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @692 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+# --------------------------------------------------------------
+# 
+# UVM_INFO test_lib.sv(28) @ 0: uvm_test_top [MEM_BASE_TEST] run_phase of MEM_BASE_TEST
+# UVM_ERROR mem_agent.sv(31) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] FAILED to get the COUNT value from UVM_CONFIG_DB
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_report_server.svh(847) @ 0: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# Quit count reached!
+# Quit count :     1 of     1
+# ** Report counts by severity
+# UVM_INFO :   15
+# UVM_WARNING :    0
+# UVM_ERROR :    1
+# UVM_FATAL :    0
+# ** Report counts by id
+# [MAXQUITSET]     1
+# [MEM_AGENT]     3
+# [MEM_BASE_TEST]     3
+# [MEM_DRV]     1
+# [MEM_ENV]     1
+# [MEM_SQR]     1
+# [RNTST]     1
+# [UVM/RELNOTES]     1
+# [ahb_agent]     2
+# [ahb_drv]     1
+# [ahb_sqr]     1
+# 
+# ** Note: $finish    : /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh(135)
+#    Time: 0 ns  Iteration: 51  Region: /uvm_pkg::uvm_task_phase::execute
+# 1
+# Break in Function uvm_pkg/uvm_root::die at /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh line 135
+do run.do
+# QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+# Start time: 15:11:53 on Jun 29,2024
+# vlog -reportprogress 300 "+incdir+/home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src" top.sv 
+# -- Compiling package uvm_pkg
+# -- Compiling package top_sv_unit
+# -- Importing package uvm_pkg
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 15:11:55 on Jun 29,2024, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# End time: 15:11:57 on Jun 29,2024, Elapsed time: 0:00:54
+# Errors: 0, Warnings: 1
+# vsim -novopt -suppress 12110 top -sv_lib /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/uvm-1.2/linux_x86_64/uvm_dpi "+UVM_TESTNAME=mem_base_test" "+UVM_MAX_QUIT_COUNT=1" 
+# Start time: 15:11:57 on Jun 29,2024
+# Loading /tmp/koushiks@vlsiguru5_dpi_230767/linux_x86_64_gcc-7.4.0/export_tramp.so
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.top_sv_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.uvm_pkg
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.uvm_pkg
+# Loading work.top_sv_unit
+# Loading work.top
+# Compiling /tmp/koushiks@vlsiguru5_dpi_230767/linux_x86_64_gcc-7.4.0/exportwrapper.c
+# Loading /tmp/koushiks@vlsiguru5_dpi_230767/linux_x86_64_gcc-7.4.0/vsim_auto_compile.so
+# Loading /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/uvm-1.2/linux_x86_64/uvm_dpi.so
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test mem_base_test...
+# UVM_INFO @ 0: reporter [MAXQUITSET] '+UVM_MAX_QUIT_COUNT=1' provided on the command line is being applied.
+# UVM_INFO test_lib.sv(14) @ 0: uvm_test_top [MEM_BASE_TEST] build_phase of MEM_BASE_TEST
+# UVM_INFO mem_env.sv(15) @ 0: uvm_test_top.mem_env_h [MEM_ENV] build_phase of MEM_ENV
+# UVM_INFO ahb_agent.sv(16) @ 0: uvm_test_top.mem_env_h.ahb_agent_h [ahb_agent] build_phase of ahb_agent
+# UVM_INFO ahb_drv.sv(12) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_drv_h [ahb_drv] build_phase of ahb_drv
+# UVM_INFO ahb_sqr.sv(11) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_sqr_h [ahb_sqr] build_phase of ahb_sqr
+# UVM_INFO mem_agent.sv(17) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] build_phase of MEM_AGENT
+# UVM_INFO mem_drv.sv(12) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [MEM_DRV] build_phase of MEM_DRV
+# UVM_INFO mem_sqr.sv(11) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h [MEM_SQR] build_phase of MEM_SQR
+# UVM_INFO ahb_agent.sv(24) @ 0: uvm_test_top.mem_env_h.ahb_agent_h [ahb_agent] connect_phase of ahb_agent
+# UVM_INFO mem_agent.sv(25) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] connect_phase of MEM_AGENT
+# UVM_INFO test_lib.sv(20) @ 0: uvm_test_top [MEM_BASE_TEST] TB structure = --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               mem_base_test           -     @334 
+#   mem_env_h                mem_env                 -     @355 
+#     ahb_agent_h            ahb_agent               -     @375 
+#       ahb_drv_h            ahb_drv                 -     @524 
+#         rsp_port           uvm_analysis_port       -     @543 
+#         seq_item_port      uvm_seq_item_pull_port  -     @533 
+#       ahb_sqr_h            ahb_sqr                 -     @387 
+#         rsp_export         uvm_analysis_export     -     @396 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @514 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     mem_agent_h            mem_agent               -     @366 
+#       mem_drv_h            mem_drv                 -     @702 
+#         rsp_port           uvm_analysis_port       -     @721 
+#         seq_item_port      uvm_seq_item_pull_port  -     @711 
+#       mem_sqr_h            mem_sqr                 -     @565 
+#         rsp_export         uvm_analysis_export     -     @574 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @692 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+# --------------------------------------------------------------
+# 
+# UVM_INFO test_lib.sv(28) @ 0: uvm_test_top [MEM_BASE_TEST] run_phase of MEM_BASE_TEST
+# UVM_INFO mem_agent.sv(34) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] PASS count_t = 20
+# UVM_INFO mem_drv.sv(16) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [MEM_DRV] run_phase of MEM_DRV
+# UVM_INFO ahb_drv.sv(16) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_drv_h [ahb_drv] run_phase of ahb_drv
+# UVM_INFO sequence_lib.sv(8) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@seq [MEM_BASE_SEQ] pre_body of MEM_BASE_SEQ
+# UVM_INFO sequence_lib.sv(12) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@seq [MEM_BASE_SEQ] body of MEM_BASE_SEQ
+# UVM_INFO sequence_lib.sv(16) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@seq [MEM_BASE_SEQ] post_phase of MEM_BASE_SEQ
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_objection.svh(1270) @ 100: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_report_server.svh(847) @ 100: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# Quit count :     0 of     1
+# ** Report counts by severity
+# UVM_INFO :   22
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [MAXQUITSET]     1
+# [MEM_AGENT]     3
+# [MEM_BASE_SEQ]     3
+# [MEM_BASE_TEST]     3
+# [MEM_DRV]     2
+# [MEM_ENV]     1
+# [MEM_SQR]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVM/RELNOTES]     1
+# [ahb_agent]     2
+# [ahb_drv]     2
+# [ahb_sqr]     1
+# 
+# ** Note: $finish    : /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 100 ns  Iteration: 67  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh line 517
+do run.do
+# QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+# Start time: 15:14:34 on Jun 29,2024
+# vlog -reportprogress 300 "+incdir+/home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src" top.sv 
+# -- Compiling package uvm_pkg
+# -- Compiling package top_sv_unit
+# -- Importing package uvm_pkg
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 15:14:35 on Jun 29,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 15:14:38 on Jun 29,2024, Elapsed time: 0:02:41
+# Errors: 0, Warnings: 1
+# vsim -novopt -suppress 12110 top -sv_lib /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/uvm-1.2/linux_x86_64/uvm_dpi "+UVM_TESTNAME=mem_base_test" "+UVM_MAX_QUIT_COUNT=1" 
+# Start time: 15:14:38 on Jun 29,2024
+# Loading /tmp/koushiks@vlsiguru5_dpi_231188/linux_x86_64_gcc-7.4.0/export_tramp.so
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.top_sv_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.uvm_pkg
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.uvm_pkg
+# Loading work.top_sv_unit
+# Loading work.top
+# Compiling /tmp/koushiks@vlsiguru5_dpi_231188/linux_x86_64_gcc-7.4.0/exportwrapper.c
+# Loading /tmp/koushiks@vlsiguru5_dpi_231188/linux_x86_64_gcc-7.4.0/vsim_auto_compile.so
+# Loading /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/uvm-1.2/linux_x86_64/uvm_dpi.so
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test mem_base_test...
+# UVM_INFO @ 0: reporter [MAXQUITSET] '+UVM_MAX_QUIT_COUNT=1' provided on the command line is being applied.
+# UVM_INFO test_lib.sv(14) @ 0: uvm_test_top [MEM_BASE_TEST] build_phase of MEM_BASE_TEST
+# UVM_INFO mem_env.sv(15) @ 0: uvm_test_top.mem_env_h [MEM_ENV] build_phase of MEM_ENV
+# UVM_INFO ahb_agent.sv(16) @ 0: uvm_test_top.mem_env_h.ahb_agent_h [ahb_agent] build_phase of ahb_agent
+# UVM_INFO ahb_drv.sv(12) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_drv_h [ahb_drv] build_phase of ahb_drv
+# UVM_INFO ahb_sqr.sv(11) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_sqr_h [ahb_sqr] build_phase of ahb_sqr
+# UVM_INFO mem_agent.sv(17) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] build_phase of MEM_AGENT
+# UVM_INFO mem_drv.sv(12) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [MEM_DRV] build_phase of MEM_DRV
+# UVM_INFO mem_sqr.sv(11) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h [MEM_SQR] build_phase of MEM_SQR
+# UVM_INFO ahb_agent.sv(24) @ 0: uvm_test_top.mem_env_h.ahb_agent_h [ahb_agent] connect_phase of ahb_agent
+# UVM_INFO mem_agent.sv(25) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] connect_phase of MEM_AGENT
+# UVM_INFO test_lib.sv(20) @ 0: uvm_test_top [MEM_BASE_TEST] TB structure = --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               mem_base_test           -     @334 
+#   mem_env_h                mem_env                 -     @355 
+#     ahb_agent_h            ahb_agent               -     @375 
+#       ahb_drv_h            ahb_drv                 -     @524 
+#         rsp_port           uvm_analysis_port       -     @543 
+#         seq_item_port      uvm_seq_item_pull_port  -     @533 
+#       ahb_sqr_h            ahb_sqr                 -     @387 
+#         rsp_export         uvm_analysis_export     -     @396 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @514 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     mem_agent_h            mem_agent               -     @366 
+#       mem_drv_h            mem_drv                 -     @702 
+#         rsp_port           uvm_analysis_port       -     @721 
+#         seq_item_port      uvm_seq_item_pull_port  -     @711 
+#       mem_sqr_h            mem_sqr                 -     @565 
+#         rsp_export         uvm_analysis_export     -     @574 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @692 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+# --------------------------------------------------------------
+# 
+# UVM_INFO test_lib.sv(28) @ 0: uvm_test_top [MEM_BASE_TEST] run_phase of MEM_BASE_TEST
+# UVM_INFO mem_agent.sv(34) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] PASS count_t = 20
+# UVM_INFO mem_drv.sv(16) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [MEM_DRV] run_phase of MEM_DRV
+# UVM_INFO ahb_drv.sv(16) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_drv_h [ahb_drv] run_phase of ahb_drv
+# UVM_INFO sequence_lib.sv(8) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@seq [MEM_BASE_SEQ] pre_body of MEM_BASE_SEQ
+# UVM_INFO sequence_lib.sv(12) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@seq [MEM_BASE_SEQ] body of MEM_BASE_SEQ
+# UVM_INFO sequence_lib.sv(16) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@seq [MEM_BASE_SEQ] post_phase of MEM_BASE_SEQ
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_objection.svh(1270) @ 100: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_report_server.svh(847) @ 100: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# Quit count :     0 of     1
+# ** Report counts by severity
+# UVM_INFO :   22
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [MAXQUITSET]     1
+# [MEM_AGENT]     3
+# [MEM_BASE_SEQ]     3
+# [MEM_BASE_TEST]     3
+# [MEM_DRV]     2
+# [MEM_ENV]     1
+# [MEM_SQR]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVM/RELNOTES]     1
+# [ahb_agent]     2
+# [ahb_drv]     2
+# [ahb_sqr]     1
+# 
+# ** Note: $finish    : /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 100 ns  Iteration: 67  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh line 517
+do run.do
+# QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+# Start time: 15:17:26 on Jun 29,2024
+# vlog -reportprogress 300 "+incdir+/home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src" top.sv 
+# -- Compiling package uvm_pkg
+# -- Compiling package top_sv_unit
+# -- Importing package uvm_pkg
+# ** Error: mem_env.sv(21): (vlog-2730) Undefined variable: 'count_t'.
+# -- Compiling module top
+# ** Error: top.sv(31): (vlog-2730) Undefined variable: 'uvm_config_db'.
+# ** Error: (vlog-13069) top.sv(31): near "#": syntax error, unexpected '#'.
+# End time: 15:17:27 on Jun 29,2024, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 0
+# ** Error: /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/linux_x86_64/vlog failed.
+# Error in macro ./run.do line 2
+# /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/linux_x86_64/vlog failed.
+#     while executing
+# "vlog +incdir+/home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src top.sv"
+do run.do
+# QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+# Start time: 15:17:44 on Jun 29,2024
+# vlog -reportprogress 300 "+incdir+/home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src" top.sv 
+# -- Compiling package uvm_pkg
+# -- Compiling package top_sv_unit
+# -- Importing package uvm_pkg
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 15:17:45 on Jun 29,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 15:17:47 on Jun 29,2024, Elapsed time: 0:03:09
+# Errors: 1, Warnings: 1
+# vsim -novopt -suppress 12110 top -sv_lib /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/uvm-1.2/linux_x86_64/uvm_dpi "+UVM_TESTNAME=mem_base_test" "+UVM_MAX_QUIT_COUNT=1" 
+# Start time: 15:17:47 on Jun 29,2024
+# Loading /tmp/koushiks@vlsiguru5_dpi_231802/linux_x86_64_gcc-7.4.0/export_tramp.so
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.top_sv_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.uvm_pkg
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.uvm_pkg
+# Loading work.top_sv_unit
+# Loading work.top
+# Compiling /tmp/koushiks@vlsiguru5_dpi_231802/linux_x86_64_gcc-7.4.0/exportwrapper.c
+# Loading /tmp/koushiks@vlsiguru5_dpi_231802/linux_x86_64_gcc-7.4.0/vsim_auto_compile.so
+# Loading /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/uvm-1.2/linux_x86_64/uvm_dpi.so
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test mem_base_test...
+# UVM_INFO @ 0: reporter [MAXQUITSET] '+UVM_MAX_QUIT_COUNT=1' provided on the command line is being applied.
+# UVM_INFO test_lib.sv(14) @ 0: uvm_test_top [MEM_BASE_TEST] build_phase of MEM_BASE_TEST
+# UVM_INFO mem_env.sv(16) @ 0: uvm_test_top.mem_env_h [MEM_ENV] build_phase of MEM_ENV
+# UVM_INFO ahb_agent.sv(16) @ 0: uvm_test_top.mem_env_h.ahb_agent_h [ahb_agent] build_phase of ahb_agent
+# UVM_INFO ahb_drv.sv(12) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_drv_h [ahb_drv] build_phase of ahb_drv
+# UVM_INFO ahb_sqr.sv(11) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_sqr_h [ahb_sqr] build_phase of ahb_sqr
+# UVM_INFO mem_agent.sv(17) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] build_phase of MEM_AGENT
+# UVM_INFO mem_drv.sv(12) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [MEM_DRV] build_phase of MEM_DRV
+# UVM_INFO mem_sqr.sv(11) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h [MEM_SQR] build_phase of MEM_SQR
+# UVM_INFO ahb_agent.sv(24) @ 0: uvm_test_top.mem_env_h.ahb_agent_h [ahb_agent] connect_phase of ahb_agent
+# UVM_INFO mem_agent.sv(25) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] connect_phase of MEM_AGENT
+# UVM_INFO test_lib.sv(20) @ 0: uvm_test_top [MEM_BASE_TEST] TB structure = --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               mem_base_test           -     @334 
+#   mem_env_h                mem_env                 -     @355 
+#     ahb_agent_h            ahb_agent               -     @375 
+#       ahb_drv_h            ahb_drv                 -     @524 
+#         rsp_port           uvm_analysis_port       -     @543 
+#         seq_item_port      uvm_seq_item_pull_port  -     @533 
+#       ahb_sqr_h            ahb_sqr                 -     @387 
+#         rsp_export         uvm_analysis_export     -     @396 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @514 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     mem_agent_h            mem_agent               -     @366 
+#       mem_drv_h            mem_drv                 -     @702 
+#         rsp_port           uvm_analysis_port       -     @721 
+#         seq_item_port      uvm_seq_item_pull_port  -     @711 
+#       mem_sqr_h            mem_sqr                 -     @565 
+#         rsp_export         uvm_analysis_export     -     @574 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @692 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+# --------------------------------------------------------------
+# 
+# UVM_INFO test_lib.sv(28) @ 0: uvm_test_top [MEM_BASE_TEST] run_phase of MEM_BASE_TEST
+# UVM_ERROR mem_env.sv(23) @ 0: uvm_test_top.mem_env_h [MEM_ENV] FAILED to get the COUNT value from UVM_CONFIG_DB
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_report_server.svh(847) @ 0: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# Quit count reached!
+# Quit count :     1 of     1
+# ** Report counts by severity
+# UVM_INFO :   15
+# UVM_WARNING :    0
+# UVM_ERROR :    1
+# UVM_FATAL :    0
+# ** Report counts by id
+# [MAXQUITSET]     1
+# [MEM_AGENT]     2
+# [MEM_BASE_TEST]     3
+# [MEM_DRV]     1
+# [MEM_ENV]     2
+# [MEM_SQR]     1
+# [RNTST]     1
+# [UVM/RELNOTES]     1
+# [ahb_agent]     2
+# [ahb_drv]     1
+# [ahb_sqr]     1
+# 
+# ** Note: $finish    : /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh(135)
+#    Time: 0 ns  Iteration: 51  Region: /uvm_pkg::uvm_task_phase::execute
+# 1
+# Break in Function uvm_pkg/uvm_root::die at /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh line 135
+do run.do
+# QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+# Start time: 15:18:40 on Jun 29,2024
+# vlog -reportprogress 300 "+incdir+/home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src" top.sv 
+# -- Compiling package uvm_pkg
+# -- Compiling package top_sv_unit
+# -- Importing package uvm_pkg
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 15:18:42 on Jun 29,2024, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# End time: 15:18:44 on Jun 29,2024, Elapsed time: 0:00:57
+# Errors: 0, Warnings: 1
+# vsim -novopt -suppress 12110 top -sv_lib /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/uvm-1.2/linux_x86_64/uvm_dpi "+UVM_TESTNAME=mem_base_test" "+UVM_MAX_QUIT_COUNT=10" 
+# Start time: 15:18:44 on Jun 29,2024
+# Loading /tmp/koushiks@vlsiguru5_dpi_232013/linux_x86_64_gcc-7.4.0/export_tramp.so
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.top_sv_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.uvm_pkg
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.uvm_pkg
+# Loading work.top_sv_unit
+# Loading work.top
+# Compiling /tmp/koushiks@vlsiguru5_dpi_232013/linux_x86_64_gcc-7.4.0/exportwrapper.c
+# Loading /tmp/koushiks@vlsiguru5_dpi_232013/linux_x86_64_gcc-7.4.0/vsim_auto_compile.so
+# Loading /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/uvm-1.2/linux_x86_64/uvm_dpi.so
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test mem_base_test...
+# UVM_INFO @ 0: reporter [MAXQUITSET] '+UVM_MAX_QUIT_COUNT=10' provided on the command line is being applied.
+# UVM_INFO test_lib.sv(14) @ 0: uvm_test_top [MEM_BASE_TEST] build_phase of MEM_BASE_TEST
+# UVM_INFO mem_env.sv(16) @ 0: uvm_test_top.mem_env_h [MEM_ENV] build_phase of MEM_ENV
+# UVM_INFO ahb_agent.sv(16) @ 0: uvm_test_top.mem_env_h.ahb_agent_h [ahb_agent] build_phase of ahb_agent
+# UVM_INFO ahb_drv.sv(12) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_drv_h [ahb_drv] build_phase of ahb_drv
+# UVM_INFO ahb_sqr.sv(11) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_sqr_h [ahb_sqr] build_phase of ahb_sqr
+# UVM_INFO mem_agent.sv(17) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] build_phase of MEM_AGENT
+# UVM_INFO mem_drv.sv(12) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [MEM_DRV] build_phase of MEM_DRV
+# UVM_INFO mem_sqr.sv(11) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h [MEM_SQR] build_phase of MEM_SQR
+# UVM_INFO ahb_agent.sv(24) @ 0: uvm_test_top.mem_env_h.ahb_agent_h [ahb_agent] connect_phase of ahb_agent
+# UVM_INFO mem_agent.sv(25) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] connect_phase of MEM_AGENT
+# UVM_INFO test_lib.sv(20) @ 0: uvm_test_top [MEM_BASE_TEST] TB structure = --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               mem_base_test           -     @334 
+#   mem_env_h                mem_env                 -     @355 
+#     ahb_agent_h            ahb_agent               -     @375 
+#       ahb_drv_h            ahb_drv                 -     @524 
+#         rsp_port           uvm_analysis_port       -     @543 
+#         seq_item_port      uvm_seq_item_pull_port  -     @533 
+#       ahb_sqr_h            ahb_sqr                 -     @387 
+#         rsp_export         uvm_analysis_export     -     @396 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @514 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     mem_agent_h            mem_agent               -     @366 
+#       mem_drv_h            mem_drv                 -     @702 
+#         rsp_port           uvm_analysis_port       -     @721 
+#         seq_item_port      uvm_seq_item_pull_port  -     @711 
+#       mem_sqr_h            mem_sqr                 -     @565 
+#         rsp_export         uvm_analysis_export     -     @574 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @692 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+# --------------------------------------------------------------
+# 
+# UVM_INFO test_lib.sv(28) @ 0: uvm_test_top [MEM_BASE_TEST] run_phase of MEM_BASE_TEST
+# UVM_ERROR mem_env.sv(23) @ 0: uvm_test_top.mem_env_h [MEM_ENV] FAILED to get the COUNT value from UVM_CONFIG_DB
+# UVM_INFO mem_agent.sv(34) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] PASS count_t = 20
+# UVM_INFO mem_drv.sv(16) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [MEM_DRV] run_phase of MEM_DRV
+# UVM_INFO ahb_drv.sv(16) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_drv_h [ahb_drv] run_phase of ahb_drv
+# UVM_INFO sequence_lib.sv(8) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@seq [MEM_BASE_SEQ] pre_body of MEM_BASE_SEQ
+# UVM_INFO sequence_lib.sv(12) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@seq [MEM_BASE_SEQ] body of MEM_BASE_SEQ
+# UVM_INFO sequence_lib.sv(16) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@seq [MEM_BASE_SEQ] post_phase of MEM_BASE_SEQ
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_objection.svh(1270) @ 100: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_report_server.svh(847) @ 100: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# Quit count :     1 of    10
+# ** Report counts by severity
+# UVM_INFO :   22
+# UVM_WARNING :    0
+# UVM_ERROR :    1
+# UVM_FATAL :    0
+# ** Report counts by id
+# [MAXQUITSET]     1
+# [MEM_AGENT]     3
+# [MEM_BASE_SEQ]     3
+# [MEM_BASE_TEST]     3
+# [MEM_DRV]     2
+# [MEM_ENV]     2
+# [MEM_SQR]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVM/RELNOTES]     1
+# [ahb_agent]     2
+# [ahb_drv]     2
+# [ahb_sqr]     1
+# 
+# ** Note: $finish    : /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 100 ns  Iteration: 67  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh line 517
+do run.do
+# QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+# Start time: 15:24:24 on Jun 29,2024
+# vlog -reportprogress 300 "+incdir+/home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src" top.sv 
+# -- Compiling package uvm_pkg
+# -- Compiling package top_sv_unit
+# -- Importing package uvm_pkg
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 15:24:25 on Jun 29,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 15:24:28 on Jun 29,2024, Elapsed time: 0:05:44
+# Errors: 0, Warnings: 1
+# vsim -novopt -suppress 12110 top -sv_lib /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/uvm-1.2/linux_x86_64/uvm_dpi "+UVM_TESTNAME=mem_base_test" "+UVM_MAX_QUIT_COUNT=10" 
+# Start time: 15:24:28 on Jun 29,2024
+# Loading /tmp/koushiks@vlsiguru5_dpi_233305/linux_x86_64_gcc-7.4.0/export_tramp.so
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.top_sv_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.uvm_pkg
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.uvm_pkg
+# Loading work.top_sv_unit
+# Loading work.top
+# Compiling /tmp/koushiks@vlsiguru5_dpi_233305/linux_x86_64_gcc-7.4.0/exportwrapper.c
+# Loading /tmp/koushiks@vlsiguru5_dpi_233305/linux_x86_64_gcc-7.4.0/vsim_auto_compile.so
+# Loading /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/uvm-1.2/linux_x86_64/uvm_dpi.so
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test mem_base_test...
+# UVM_INFO @ 0: reporter [MAXQUITSET] '+UVM_MAX_QUIT_COUNT=10' provided on the command line is being applied.
+# UVM_INFO test_lib.sv(14) @ 0: uvm_test_top [MEM_BASE_TEST] build_phase of MEM_BASE_TEST
+# UVM_INFO mem_env.sv(16) @ 0: uvm_test_top.mem_env_h [MEM_ENV] build_phase of MEM_ENV
+# UVM_INFO ahb_agent.sv(16) @ 0: uvm_test_top.mem_env_h.ahb_agent_h [ahb_agent] build_phase of ahb_agent
+# UVM_INFO ahb_drv.sv(12) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_drv_h [ahb_drv] build_phase of ahb_drv
+# UVM_INFO ahb_sqr.sv(11) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_sqr_h [ahb_sqr] build_phase of ahb_sqr
+# UVM_INFO mem_agent.sv(17) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] build_phase of MEM_AGENT
+# UVM_INFO mem_drv.sv(12) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [MEM_DRV] build_phase of MEM_DRV
+# UVM_INFO mem_sqr.sv(11) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h [MEM_SQR] build_phase of MEM_SQR
+# UVM_INFO ahb_agent.sv(24) @ 0: uvm_test_top.mem_env_h.ahb_agent_h [ahb_agent] connect_phase of ahb_agent
+# UVM_INFO mem_agent.sv(25) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] connect_phase of MEM_AGENT
+# UVM_INFO test_lib.sv(20) @ 0: uvm_test_top [MEM_BASE_TEST] TB structure = --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               mem_base_test           -     @334 
+#   mem_env_h                mem_env                 -     @355 
+#     ahb_agent_h            ahb_agent               -     @375 
+#       ahb_drv_h            ahb_drv                 -     @524 
+#         rsp_port           uvm_analysis_port       -     @543 
+#         seq_item_port      uvm_seq_item_pull_port  -     @533 
+#       ahb_sqr_h            ahb_sqr                 -     @387 
+#         rsp_export         uvm_analysis_export     -     @396 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @514 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     mem_agent_h            mem_agent               -     @366 
+#       mem_drv_h            mem_drv                 -     @702 
+#         rsp_port           uvm_analysis_port       -     @721 
+#         seq_item_port      uvm_seq_item_pull_port  -     @711 
+#       mem_sqr_h            mem_sqr                 -     @565 
+#         rsp_export         uvm_analysis_export     -     @574 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @692 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+# --------------------------------------------------------------
+# 
+# UVM_INFO test_lib.sv(28) @ 0: uvm_test_top [MEM_BASE_TEST] run_phase of MEM_BASE_TEST
+# UVM_INFO mem_env.sv(26) @ 0: uvm_test_top.mem_env_h [MEM_ENV] PASS count_t = 20
+# UVM_INFO mem_agent.sv(34) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] PASS count_t = 20
+# UVM_INFO mem_drv.sv(16) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [MEM_DRV] run_phase of MEM_DRV
+# UVM_INFO ahb_drv.sv(16) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_drv_h [ahb_drv] run_phase of ahb_drv
+# UVM_INFO sequence_lib.sv(8) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@seq [MEM_BASE_SEQ] pre_body of MEM_BASE_SEQ
+# UVM_INFO sequence_lib.sv(12) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@seq [MEM_BASE_SEQ] body of MEM_BASE_SEQ
+# UVM_INFO sequence_lib.sv(16) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@seq [MEM_BASE_SEQ] post_phase of MEM_BASE_SEQ
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_objection.svh(1270) @ 100: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_report_server.svh(847) @ 100: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# Quit count :     0 of    10
+# ** Report counts by severity
+# UVM_INFO :   23
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [MAXQUITSET]     1
+# [MEM_AGENT]     3
+# [MEM_BASE_SEQ]     3
+# [MEM_BASE_TEST]     3
+# [MEM_DRV]     2
+# [MEM_ENV]     2
+# [MEM_SQR]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVM/RELNOTES]     1
+# [ahb_agent]     2
+# [ahb_drv]     2
+# [ahb_sqr]     1
+# 
+# ** Note: $finish    : /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 100 ns  Iteration: 67  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh line 517
+do run.do
+# QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+# Start time: 17:05:25 on Jun 29,2024
+# vlog -reportprogress 300 "+incdir+/home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src" top.sv 
+# -- Compiling package uvm_pkg
+# -- Compiling package top_sv_unit
+# -- Importing package uvm_pkg
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 17:05:27 on Jun 29,2024, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# End time: 17:05:29 on Jun 29,2024, Elapsed time: 1:41:01
+# Errors: 0, Warnings: 1
+# vsim -novopt -suppress 12110 top -sv_lib /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/uvm-1.2/linux_x86_64/uvm_dpi "+UVM_TESTNAME=mem_base_test" "+UVM_MAX_QUIT_COUNT=10" 
+# Start time: 17:05:29 on Jun 29,2024
+# Loading /tmp/koushiks@vlsiguru5_dpi_248179/linux_x86_64_gcc-7.4.0/export_tramp.so
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.top_sv_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.uvm_pkg
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.uvm_pkg
+# Loading work.top_sv_unit
+# Loading work.top
+# Compiling /tmp/koushiks@vlsiguru5_dpi_248179/linux_x86_64_gcc-7.4.0/exportwrapper.c
+# Loading /tmp/koushiks@vlsiguru5_dpi_248179/linux_x86_64_gcc-7.4.0/vsim_auto_compile.so
+# Loading /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/uvm-1.2/linux_x86_64/uvm_dpi.so
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test mem_base_test...
+# UVM_INFO @ 0: reporter [MAXQUITSET] '+UVM_MAX_QUIT_COUNT=10' provided on the command line is being applied.
+# UVM_INFO test_lib.sv(14) @ 0: uvm_test_top [MEM_BASE_TEST] build_phase of MEM_BASE_TEST
+# UVM_INFO mem_env.sv(16) @ 0: uvm_test_top.mem_env_h [MEM_ENV] build_phase of MEM_ENV
+# UVM_INFO ahb_agent.sv(16) @ 0: uvm_test_top.mem_env_h.ahb_agent_h [ahb_agent] build_phase of ahb_agent
+# UVM_INFO ahb_drv.sv(20) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_drv_h [ahb_drv] build_phase of ahb_drv
+# UVM_INFO ahb_sqr.sv(11) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_sqr_h [ahb_sqr] build_phase of ahb_sqr
+# UVM_INFO mem_agent.sv(17) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] build_phase of MEM_AGENT
+# UVM_INFO mem_drv.sv(12) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [MEM_DRV] build_phase of MEM_DRV
+# UVM_INFO mem_sqr.sv(11) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h [MEM_SQR] build_phase of MEM_SQR
+# UVM_INFO ahb_agent.sv(24) @ 0: uvm_test_top.mem_env_h.ahb_agent_h [ahb_agent] connect_phase of ahb_agent
+# UVM_INFO mem_agent.sv(25) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] connect_phase of MEM_AGENT
+# UVM_INFO test_lib.sv(20) @ 0: uvm_test_top [MEM_BASE_TEST] TB structure = --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               mem_base_test           -     @334 
+#   mem_env_h                mem_env                 -     @355 
+#     ahb_agent_h            ahb_agent               -     @375 
+#       ahb_drv_h            ahb_drv                 -     @524 
+#         rsp_port           uvm_analysis_port       -     @543 
+#         seq_item_port      uvm_seq_item_pull_port  -     @533 
+#         count              integral                32    'h14 
+#       ahb_sqr_h            ahb_sqr                 -     @387 
+#         rsp_export         uvm_analysis_export     -     @396 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @514 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     mem_agent_h            mem_agent               -     @366 
+#       mem_drv_h            mem_drv                 -     @704 
+#         rsp_port           uvm_analysis_port       -     @723 
+#         seq_item_port      uvm_seq_item_pull_port  -     @713 
+#       mem_sqr_h            mem_sqr                 -     @567 
+#         rsp_export         uvm_analysis_export     -     @576 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @694 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+# --------------------------------------------------------------
+# 
+# UVM_INFO test_lib.sv(28) @ 0: uvm_test_top [MEM_BASE_TEST] run_phase of MEM_BASE_TEST
+# UVM_INFO mem_env.sv(26) @ 0: uvm_test_top.mem_env_h [MEM_ENV] PASS count_t = 20
+# UVM_INFO mem_agent.sv(34) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] PASS count_t = 20
+# UVM_INFO mem_drv.sv(16) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [MEM_DRV] run_phase of MEM_DRV
+# UVM_INFO ahb_drv.sv(24) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_drv_h [ahb_drv] run_phase of ahb_drv
+# UVM_INFO ahb_drv.sv(28) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_drv_h [AHB_DRV] auto-retrival of count = 20
+# UVM_INFO sequence_lib.sv(8) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@seq [MEM_BASE_SEQ] pre_body of MEM_BASE_SEQ
+# UVM_INFO sequence_lib.sv(12) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@seq [MEM_BASE_SEQ] body of MEM_BASE_SEQ
+# UVM_INFO sequence_lib.sv(16) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@seq [MEM_BASE_SEQ] post_phase of MEM_BASE_SEQ
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_objection.svh(1270) @ 100: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_report_server.svh(847) @ 100: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# Quit count :     0 of    10
+# ** Report counts by severity
+# UVM_INFO :   24
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [AHB_DRV]     1
+# [MAXQUITSET]     1
+# [MEM_AGENT]     3
+# [MEM_BASE_SEQ]     3
+# [MEM_BASE_TEST]     3
+# [MEM_DRV]     2
+# [MEM_ENV]     2
+# [MEM_SQR]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVM/RELNOTES]     1
+# [ahb_agent]     2
+# [ahb_drv]     2
+# [ahb_sqr]     1
+# 
+# ** Note: $finish    : /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 100 ns  Iteration: 67  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh line 517
+do run.do
+# QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+# Start time: 17:06:51 on Jun 29,2024
+# vlog -reportprogress 300 "+incdir+/home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src" top.sv 
+# -- Compiling package uvm_pkg
+# -- Compiling package top_sv_unit
+# -- Importing package uvm_pkg
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 17:06:52 on Jun 29,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 17:06:55 on Jun 29,2024, Elapsed time: 0:01:26
+# Errors: 0, Warnings: 1
+# vsim -novopt -suppress 12110 top -sv_lib /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/uvm-1.2/linux_x86_64/uvm_dpi "+UVM_TESTNAME=mem_base_test" "+UVM_MAX_QUIT_COUNT=10" 
+# Start time: 17:06:55 on Jun 29,2024
+# Loading /tmp/koushiks@vlsiguru5_dpi_248676/linux_x86_64_gcc-7.4.0/export_tramp.so
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.top_sv_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.uvm_pkg
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.uvm_pkg
+# Loading work.top_sv_unit
+# Loading work.top
+# Compiling /tmp/koushiks@vlsiguru5_dpi_248676/linux_x86_64_gcc-7.4.0/exportwrapper.c
+# Loading /tmp/koushiks@vlsiguru5_dpi_248676/linux_x86_64_gcc-7.4.0/vsim_auto_compile.so
+# Loading /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/uvm-1.2/linux_x86_64/uvm_dpi.so
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test mem_base_test...
+# UVM_INFO @ 0: reporter [MAXQUITSET] '+UVM_MAX_QUIT_COUNT=10' provided on the command line is being applied.
+# UVM_INFO test_lib.sv(14) @ 0: uvm_test_top [MEM_BASE_TEST] build_phase of MEM_BASE_TEST
+# UVM_INFO mem_env.sv(16) @ 0: uvm_test_top.mem_env_h [MEM_ENV] build_phase of MEM_ENV
+# UVM_INFO ahb_agent.sv(16) @ 0: uvm_test_top.mem_env_h.ahb_agent_h [ahb_agent] build_phase of ahb_agent
+# UVM_INFO ahb_drv.sv(22) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_drv_h [ahb_drv] build_phase of ahb_drv
+# UVM_INFO ahb_sqr.sv(11) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_sqr_h [ahb_sqr] build_phase of ahb_sqr
+# UVM_INFO mem_agent.sv(17) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] build_phase of MEM_AGENT
+# UVM_INFO mem_drv.sv(12) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [MEM_DRV] build_phase of MEM_DRV
+# UVM_INFO mem_sqr.sv(11) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h [MEM_SQR] build_phase of MEM_SQR
+# UVM_INFO ahb_agent.sv(24) @ 0: uvm_test_top.mem_env_h.ahb_agent_h [ahb_agent] connect_phase of ahb_agent
+# UVM_INFO mem_agent.sv(25) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] connect_phase of MEM_AGENT
+# UVM_INFO test_lib.sv(20) @ 0: uvm_test_top [MEM_BASE_TEST] TB structure = --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               mem_base_test           -     @334 
+#   mem_env_h                mem_env                 -     @355 
+#     ahb_agent_h            ahb_agent               -     @375 
+#       ahb_drv_h            ahb_drv                 -     @524 
+#         rsp_port           uvm_analysis_port       -     @543 
+#         seq_item_port      uvm_seq_item_pull_port  -     @533 
+#       ahb_sqr_h            ahb_sqr                 -     @387 
+#         rsp_export         uvm_analysis_export     -     @396 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @514 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     mem_agent_h            mem_agent               -     @366 
+#       mem_drv_h            mem_drv                 -     @702 
+#         rsp_port           uvm_analysis_port       -     @721 
+#         seq_item_port      uvm_seq_item_pull_port  -     @711 
+#       mem_sqr_h            mem_sqr                 -     @565 
+#         rsp_export         uvm_analysis_export     -     @574 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @692 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+# --------------------------------------------------------------
+# 
+# UVM_INFO test_lib.sv(28) @ 0: uvm_test_top [MEM_BASE_TEST] run_phase of MEM_BASE_TEST
+# UVM_INFO mem_env.sv(26) @ 0: uvm_test_top.mem_env_h [MEM_ENV] PASS count_t = 20
+# UVM_INFO mem_agent.sv(34) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] PASS count_t = 20
+# UVM_INFO mem_drv.sv(16) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [MEM_DRV] run_phase of MEM_DRV
+# UVM_INFO ahb_drv.sv(26) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_drv_h [ahb_drv] run_phase of ahb_drv
+# UVM_INFO ahb_drv.sv(30) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_drv_h [AHB_DRV] auto-retrival of count = 0
+# UVM_INFO sequence_lib.sv(8) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@seq [MEM_BASE_SEQ] pre_body of MEM_BASE_SEQ
+# UVM_INFO sequence_lib.sv(12) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@seq [MEM_BASE_SEQ] body of MEM_BASE_SEQ
+# UVM_INFO sequence_lib.sv(16) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@seq [MEM_BASE_SEQ] post_phase of MEM_BASE_SEQ
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_objection.svh(1270) @ 100: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_report_server.svh(847) @ 100: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# Quit count :     0 of    10
+# ** Report counts by severity
+# UVM_INFO :   24
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [AHB_DRV]     1
+# [MAXQUITSET]     1
+# [MEM_AGENT]     3
+# [MEM_BASE_SEQ]     3
+# [MEM_BASE_TEST]     3
+# [MEM_DRV]     2
+# [MEM_ENV]     2
+# [MEM_SQR]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UVM/RELNOTES]     1
+# [ahb_agent]     2
+# [ahb_drv]     2
+# [ahb_sqr]     1
+# 
+# ** Note: $finish    : /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 100 ns  Iteration: 67  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh line 517
+do run.do
+# QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+# Start time: 17:32:07 on Jun 29,2024
+# vlog -reportprogress 300 "+incdir+/home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src" top.sv 
+# -- Compiling package uvm_pkg
+# -- Compiling package top_sv_unit
+# -- Importing package uvm_pkg
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 17:32:09 on Jun 29,2024, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# End time: 17:32:11 on Jun 29,2024, Elapsed time: 0:25:16
+# Errors: 0, Warnings: 1
+# vsim -novopt -suppress 12110 top -sv_lib /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/uvm-1.2/linux_x86_64/uvm_dpi "+UVM_TESTNAME=mem_base_test" "+UVM_MAX_QUIT_COUNT=10" 
+# Start time: 17:32:11 on Jun 29,2024
+# Loading /tmp/koushiks@vlsiguru5_dpi_255913/linux_x86_64_gcc-7.4.0/export_tramp.so
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.top_sv_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.uvm_pkg
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.uvm_pkg
+# Loading work.top_sv_unit
+# Loading work.top
+# Compiling /tmp/koushiks@vlsiguru5_dpi_255913/linux_x86_64_gcc-7.4.0/exportwrapper.c
+# Loading /tmp/koushiks@vlsiguru5_dpi_255913/linux_x86_64_gcc-7.4.0/vsim_auto_compile.so
+# Loading /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/uvm-1.2/linux_x86_64/uvm_dpi.so
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test mem_base_test...
+# UVM_INFO top.sv(35) @ 0: reporter [TOP] context = '{m_leaf_name:"", m_inst_id:16, use_uvm_seeding:1, m_inst_count:350, __m_uvm_status_container:@uvm_status_container@1, uvm_global_copy_map:'{ }, m_rh:@uvm_report_handler@2, enable_stop_interrupt:0, print_enabled:1, tr_database:null, m_domain:@uvm_domain@2, m_phase_imps:'{ }, m_current_phase:null, m_phase_process:null, m_build_done:0, m_phasing_active:0, m_parent:null, m_children:'{"uvm_test_top":@mem_base_test@1 }, m_children_by_handle:'{@mem_base_test@1:@mem_base_test@1 }, m_main_stream:null, m_streams:'{ }, m_tr_h:'{ }, m_name:"", event_pool:null, recording_detail:0, m_verbosity_settings:'{}, m_config_deprecated_warned:0, m_config_set:1, print_config_matches:0, type_name:"uvm_component", m_time_settings:'{}, m_uvm_applied_cl_action:'{}, m_uvm_applied_cl_sev:'{}, clp:@uvm_cmdline_processor@1, finish_on_completion:1, top_levels:'{@mem_base_test@1}, enable_print_topology:0, phase_timeout:9200000000000, m_phase_all_done:0, m_inst:@uvm_root@1, m_relnotes_done:1}
+# UVM_INFO @ 0: reporter [MAXQUITSET] '+UVM_MAX_QUIT_COUNT=10' provided on the command line is being applied.
+# UVM_INFO test_lib.sv(14) @ 0: uvm_test_top [MEM_BASE_TEST] build_phase of MEM_BASE_TEST
+# UVM_INFO mem_env.sv(16) @ 0: uvm_test_top.mem_env_h [MEM_ENV] build_phase of MEM_ENV
+# UVM_INFO ahb_agent.sv(16) @ 0: uvm_test_top.mem_env_h.ahb_agent_h [ahb_agent] build_phase of ahb_agent
+# UVM_INFO ahb_drv.sv(22) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_drv_h [ahb_drv] build_phase of ahb_drv
+# UVM_INFO ahb_sqr.sv(11) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_sqr_h [ahb_sqr] build_phase of ahb_sqr
+# UVM_INFO mem_agent.sv(17) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] build_phase of MEM_AGENT
+# UVM_INFO mem_drv.sv(12) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [MEM_DRV] build_phase of MEM_DRV
+# UVM_INFO mem_sqr.sv(11) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h [MEM_SQR] build_phase of MEM_SQR
+# UVM_INFO ahb_agent.sv(24) @ 0: uvm_test_top.mem_env_h.ahb_agent_h [ahb_agent] connect_phase of ahb_agent
+# UVM_INFO mem_agent.sv(25) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] connect_phase of MEM_AGENT
+# UVM_INFO test_lib.sv(20) @ 0: uvm_test_top [MEM_BASE_TEST] TB structure = --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               mem_base_test           -     @334 
+#   mem_env_h                mem_env                 -     @357 
+#     ahb_agent_h            ahb_agent               -     @377 
+#       ahb_drv_h            ahb_drv                 -     @526 
+#         rsp_port           uvm_analysis_port       -     @545 
+#         seq_item_port      uvm_seq_item_pull_port  -     @535 
+#         count              integral                32    'h14 
+#       ahb_sqr_h            ahb_sqr                 -     @389 
+#         rsp_export         uvm_analysis_export     -     @398 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @516 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     mem_agent_h            mem_agent               -     @368 
+#       mem_drv_h            mem_drv                 -     @706 
+#         rsp_port           uvm_analysis_port       -     @725 
+#         seq_item_port      uvm_seq_item_pull_port  -     @715 
+#       mem_sqr_h            mem_sqr                 -     @569 
+#         rsp_export         uvm_analysis_export     -     @578 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @696 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+# --------------------------------------------------------------
+# 
+# UVM_INFO test_lib.sv(28) @ 0: uvm_test_top [MEM_BASE_TEST] run_phase of MEM_BASE_TEST
+# UVM_INFO mem_env.sv(26) @ 0: uvm_test_top.mem_env_h [MEM_ENV] PASS count_t = 20
+# UVM_INFO mem_agent.sv(34) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] PASS count_t = 20
+# UVM_INFO mem_drv.sv(16) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [MEM_DRV] run_phase of MEM_DRV
+# UVM_INFO ahb_drv.sv(26) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_drv_h [ahb_drv] run_phase of ahb_drv
+# UVM_INFO ahb_drv.sv(30) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_drv_h [AHB_DRV] auto-retrival of count = 20
+# UVM_INFO sequence_lib.sv(8) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@seq [MEM_BASE_SEQ] pre_body of MEM_BASE_SEQ
+# UVM_INFO sequence_lib.sv(12) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@seq [MEM_BASE_SEQ] body of MEM_BASE_SEQ
+# UVM_INFO sequence_lib.sv(16) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@seq [MEM_BASE_SEQ] post_phase of MEM_BASE_SEQ
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_objection.svh(1270) @ 100: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_report_server.svh(847) @ 100: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# Quit count :     0 of    10
+# ** Report counts by severity
+# UVM_INFO :   25
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [AHB_DRV]     1
+# [MAXQUITSET]     1
+# [MEM_AGENT]     3
+# [MEM_BASE_SEQ]     3
+# [MEM_BASE_TEST]     3
+# [MEM_DRV]     2
+# [MEM_ENV]     2
+# [MEM_SQR]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [TOP]     1
+# [UVM/RELNOTES]     1
+# [ahb_agent]     2
+# [ahb_drv]     2
+# [ahb_sqr]     1
+# 
+# ** Note: $finish    : /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 100 ns  Iteration: 67  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh line 517
+do run.do
+# QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+# Start time: 17:34:01 on Jun 29,2024
+# vlog -reportprogress 300 "+incdir+/home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src" top.sv 
+# -- Compiling package uvm_pkg
+# -- Compiling package top_sv_unit
+# -- Importing package uvm_pkg
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 17:34:03 on Jun 29,2024, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# End time: 17:34:05 on Jun 29,2024, Elapsed time: 0:01:54
+# Errors: 0, Warnings: 1
+# vsim -novopt -suppress 12110 top -sv_lib /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/uvm-1.2/linux_x86_64/uvm_dpi "+UVM_TESTNAME=mem_base_test" "+UVM_MAX_QUIT_COUNT=10" 
+# Start time: 17:34:05 on Jun 29,2024
+# Loading /tmp/koushiks@vlsiguru5_dpi_256322/linux_x86_64_gcc-7.4.0/export_tramp.so
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.top_sv_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.uvm_pkg
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.uvm_pkg
+# Loading work.top_sv_unit
+# Loading work.top
+# Compiling /tmp/koushiks@vlsiguru5_dpi_256322/linux_x86_64_gcc-7.4.0/exportwrapper.c
+# Loading /tmp/koushiks@vlsiguru5_dpi_256322/linux_x86_64_gcc-7.4.0/vsim_auto_compile.so
+# Loading /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/uvm-1.2/linux_x86_64/uvm_dpi.so
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test mem_base_test...
+# UVM_INFO top.sv(35) @ 0: reporter [TOP] context = '{m_leaf_name:"", m_inst_id:16, use_uvm_seeding:1, m_inst_count:350, __m_uvm_status_container:@uvm_status_container@1, uvm_global_copy_map:'{ }, m_rh:@uvm_report_handler@2, enable_stop_interrupt:0, print_enabled:1, tr_database:null, m_domain:@uvm_domain@2, m_phase_imps:'{ }, m_current_phase:null, m_phase_process:null, m_build_done:0, m_phasing_active:0, m_parent:null, m_children:'{"uvm_test_top":@mem_base_test@1 }, m_children_by_handle:'{@mem_base_test@1:@mem_base_test@1 }, m_main_stream:null, m_streams:'{ }, m_tr_h:'{ }, m_name:"", event_pool:null, recording_detail:0, m_verbosity_settings:'{}, m_config_deprecated_warned:0, m_config_set:1, print_config_matches:0, type_name:"uvm_component", m_time_settings:'{}, m_uvm_applied_cl_action:'{}, m_uvm_applied_cl_sev:'{}, clp:@uvm_cmdline_processor@1, finish_on_completion:1, top_levels:'{@mem_base_test@1}, enable_print_topology:0, phase_timeout:9200000000000, m_phase_all_done:0, m_inst:@uvm_root@1, m_relnotes_done:1}
+# UVM_INFO @ 0: reporter [MAXQUITSET] '+UVM_MAX_QUIT_COUNT=10' provided on the command line is being applied.
+# UVM_INFO test_lib.sv(14) @ 0: uvm_test_top [MEM_BASE_TEST] build_phase of MEM_BASE_TEST
+# UVM_INFO mem_env.sv(16) @ 0: uvm_test_top.mem_env_h [MEM_ENV] build_phase of MEM_ENV
+# UVM_INFO ahb_agent.sv(16) @ 0: uvm_test_top.mem_env_h.ahb_agent_h [ahb_agent] build_phase of ahb_agent
+# UVM_INFO ahb_drv.sv(22) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_drv_h [ahb_drv] build_phase of ahb_drv
+# UVM_INFO ahb_sqr.sv(11) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_sqr_h [ahb_sqr] build_phase of ahb_sqr
+# UVM_INFO mem_agent.sv(17) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] build_phase of MEM_AGENT
+# UVM_INFO mem_drv.sv(12) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [MEM_DRV] build_phase of MEM_DRV
+# UVM_INFO mem_sqr.sv(11) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h [MEM_SQR] build_phase of MEM_SQR
+# UVM_INFO ahb_agent.sv(24) @ 0: uvm_test_top.mem_env_h.ahb_agent_h [ahb_agent] connect_phase of ahb_agent
+# UVM_INFO mem_agent.sv(25) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] connect_phase of MEM_AGENT
+# UVM_INFO test_lib.sv(20) @ 0: uvm_test_top [MEM_BASE_TEST] TB structure = --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               mem_base_test           -     @334 
+#   mem_env_h                mem_env                 -     @357 
+#     ahb_agent_h            ahb_agent               -     @377 
+#       ahb_drv_h            ahb_drv                 -     @526 
+#         rsp_port           uvm_analysis_port       -     @545 
+#         seq_item_port      uvm_seq_item_pull_port  -     @535 
+#         count              integral                32    'h14 
+#       ahb_sqr_h            ahb_sqr                 -     @389 
+#         rsp_export         uvm_analysis_export     -     @398 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @516 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     mem_agent_h            mem_agent               -     @368 
+#       mem_drv_h            mem_drv                 -     @706 
+#         rsp_port           uvm_analysis_port       -     @725 
+#         seq_item_port      uvm_seq_item_pull_port  -     @715 
+#       mem_sqr_h            mem_sqr                 -     @569 
+#         rsp_export         uvm_analysis_export     -     @578 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @696 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+# --------------------------------------------------------------
+# 
+# UVM_INFO test_lib.sv(28) @ 0: uvm_test_top [MEM_BASE_TEST] run_phase of MEM_BASE_TEST
+# UVM_INFO test_lib.sv(29) @ 0: uvm_test_top [MEM_BASE_TEST] context = '{m_leaf_name:"", m_inst_id:16, use_uvm_seeding:1, m_inst_count:768, __m_uvm_status_container:@uvm_status_container@1, uvm_global_copy_map:'{ }, m_rh:@uvm_report_handler@2, enable_stop_interrupt:0, print_enabled:1, tr_database:null, m_domain:@uvm_domain@2, m_phase_imps:'{ }, m_current_phase:@uvm_phase@6, m_phase_process:null, m_build_done:1, m_phasing_active:0, m_parent:null, m_children:'{"uvm_test_top":@mem_base_test@1 }, m_children_by_handle:'{@mem_base_test@1:@mem_base_test@1 }, m_main_stream:null, m_streams:'{ }, m_tr_h:'{ }, m_name:"", event_pool:null, recording_detail:0, m_verbosity_settings:'{}, m_config_deprecated_warned:0, m_config_set:1, print_config_matches:0, type_name:"uvm_component", m_time_settings:'{}, m_uvm_applied_cl_action:'{}, m_uvm_applied_cl_sev:'{}, clp:@uvm_cmdline_processor@1, finish_on_completion:1, top_levels:'{@mem_base_test@1}, enable_print_topology:0, phase_timeout:9200000000000, m_phase_all_done:0, m_inst:@uvm_root@1, m_relnotes_done:1}
+# UVM_INFO mem_env.sv(26) @ 0: uvm_test_top.mem_env_h [MEM_ENV] PASS count_t = 20
+# UVM_INFO mem_agent.sv(34) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] PASS count_t = 20
+# UVM_INFO mem_drv.sv(16) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [MEM_DRV] run_phase of MEM_DRV
+# UVM_INFO ahb_drv.sv(26) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_drv_h [ahb_drv] run_phase of ahb_drv
+# UVM_INFO ahb_drv.sv(30) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_drv_h [AHB_DRV] auto-retrival of count = 20
+# UVM_INFO sequence_lib.sv(8) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@seq [MEM_BASE_SEQ] pre_body of MEM_BASE_SEQ
+# UVM_INFO sequence_lib.sv(12) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@seq [MEM_BASE_SEQ] body of MEM_BASE_SEQ
+# UVM_INFO sequence_lib.sv(16) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@seq [MEM_BASE_SEQ] post_phase of MEM_BASE_SEQ
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_objection.svh(1270) @ 100: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_report_server.svh(847) @ 100: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# Quit count :     0 of    10
+# ** Report counts by severity
+# UVM_INFO :   26
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [AHB_DRV]     1
+# [MAXQUITSET]     1
+# [MEM_AGENT]     3
+# [MEM_BASE_SEQ]     3
+# [MEM_BASE_TEST]     4
+# [MEM_DRV]     2
+# [MEM_ENV]     2
+# [MEM_SQR]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [TOP]     1
+# [UVM/RELNOTES]     1
+# [ahb_agent]     2
+# [ahb_drv]     2
+# [ahb_sqr]     1
+# 
+# ** Note: $finish    : /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 100 ns  Iteration: 67  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh line 517
+do run.do
+# QuestaSim-64 vlog 2022.2_1 Compiler 2022.05 May 19 2022
+# Start time: 17:39:27 on Jun 29,2024
+# vlog -reportprogress 300 "+incdir+/home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src" top.sv 
+# -- Compiling package uvm_pkg
+# -- Compiling package top_sv_unit
+# -- Importing package uvm_pkg
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 17:39:29 on Jun 29,2024, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# End time: 17:39:31 on Jun 29,2024, Elapsed time: 0:05:26
+# Errors: 0, Warnings: 1
+# vsim -novopt -suppress 12110 top -sv_lib /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/uvm-1.2/linux_x86_64/uvm_dpi "+UVM_TESTNAME=mem_base_test" "+UVM_MAX_QUIT_COUNT=10" 
+# Start time: 17:39:31 on Jun 29,2024
+# Loading /tmp/koushiks@vlsiguru5_dpi_257139/linux_x86_64_gcc-7.4.0/export_tramp.so
+# ** Warning: (vsim-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.top
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.top_sv_unit
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Refreshing /home/koushiks/Desktop/UVM_JUNE_2024/CODES/9.ses_29_06_2024/MEM_TB/deep_copy.uvm_pkg
+# ** Warning: (vlog-8891) All optimizations are disabled because the -novopt option is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features, please see the User's Manual section on Preserving Object Visibility with vopt. -novopt option is now deprecated and will be removed in future releases.
+# Loading sv_std.std
+# Loading work.uvm_pkg
+# Loading work.top_sv_unit
+# Loading work.top
+# Compiling /tmp/koushiks@vlsiguru5_dpi_257139/linux_x86_64_gcc-7.4.0/exportwrapper.c
+# Loading /tmp/koushiks@vlsiguru5_dpi_257139/linux_x86_64_gcc-7.4.0/vsim_auto_compile.so
+# Loading /home/tools/mentor/MENTOR_INSTALL/questa2022_2/questasim/uvm-1.2/linux_x86_64/uvm_dpi.so
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test mem_base_test...
+# UVM_INFO top.sv(35) @ 0: reporter [TOP] context = '{m_leaf_name:"", m_inst_id:16, use_uvm_seeding:1, m_inst_count:350, __m_uvm_status_container:@uvm_status_container@1, uvm_global_copy_map:'{ }, m_rh:@uvm_report_handler@2, enable_stop_interrupt:0, print_enabled:1, tr_database:null, m_domain:@uvm_domain@2, m_phase_imps:'{ }, m_current_phase:null, m_phase_process:null, m_build_done:0, m_phasing_active:0, m_parent:null, m_children:'{"uvm_test_top":@mem_base_test@1 }, m_children_by_handle:'{@mem_base_test@1:@mem_base_test@1 }, m_main_stream:null, m_streams:'{ }, m_tr_h:'{ }, m_name:"", event_pool:null, recording_detail:0, m_verbosity_settings:'{}, m_config_deprecated_warned:0, m_config_set:1, print_config_matches:0, type_name:"uvm_component", m_time_settings:'{}, m_uvm_applied_cl_action:'{}, m_uvm_applied_cl_sev:'{}, clp:@uvm_cmdline_processor@1, finish_on_completion:1, top_levels:'{@mem_base_test@1}, enable_print_topology:0, phase_timeout:9200000000000, m_phase_all_done:0, m_inst:@uvm_root@1, m_relnotes_done:1}
+# UVM_INFO @ 0: reporter [MAXQUITSET] '+UVM_MAX_QUIT_COUNT=10' provided on the command line is being applied.
+# UVM_INFO test_lib.sv(14) @ 0: uvm_test_top [MEM_BASE_TEST] build_phase of MEM_BASE_TEST
+# UVM_INFO mem_env.sv(16) @ 0: uvm_test_top.mem_env_h [MEM_ENV] build_phase of MEM_ENV
+# UVM_INFO ahb_agent.sv(16) @ 0: uvm_test_top.mem_env_h.ahb_agent_h [ahb_agent] build_phase of ahb_agent
+# UVM_INFO ahb_drv.sv(22) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_drv_h [ahb_drv] build_phase of ahb_drv
+# UVM_INFO ahb_sqr.sv(11) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_sqr_h [ahb_sqr] build_phase of ahb_sqr
+# UVM_INFO mem_agent.sv(17) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] build_phase of MEM_AGENT
+# UVM_INFO mem_drv.sv(12) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [MEM_DRV] build_phase of MEM_DRV
+# UVM_INFO mem_sqr.sv(11) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h [MEM_SQR] build_phase of MEM_SQR
+# UVM_INFO ahb_agent.sv(24) @ 0: uvm_test_top.mem_env_h.ahb_agent_h [ahb_agent] connect_phase of ahb_agent
+# UVM_INFO mem_agent.sv(25) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] connect_phase of MEM_AGENT
+# UVM_INFO test_lib.sv(20) @ 0: uvm_test_top [MEM_BASE_TEST] TB structure = --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               mem_base_test           -     @334 
+#   mem_env_h                mem_env                 -     @357 
+#     ahb_agent_h            ahb_agent               -     @377 
+#       ahb_drv_h            ahb_drv                 -     @526 
+#         rsp_port           uvm_analysis_port       -     @545 
+#         seq_item_port      uvm_seq_item_pull_port  -     @535 
+#         count              integral                32    'h14 
+#       ahb_sqr_h            ahb_sqr                 -     @389 
+#         rsp_export         uvm_analysis_export     -     @398 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @516 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     mem_agent_h            mem_agent               -     @368 
+#       mem_drv_h            mem_drv                 -     @706 
+#         rsp_port           uvm_analysis_port       -     @725 
+#         seq_item_port      uvm_seq_item_pull_port  -     @715 
+#       mem_sqr_h            mem_sqr                 -     @569 
+#         rsp_export         uvm_analysis_export     -     @578 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @696 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+# --------------------------------------------------------------
+# 
+# UVM_INFO test_lib.sv(28) @ 0: uvm_test_top [MEM_BASE_TEST] run_phase of MEM_BASE_TEST
+# UVM_INFO test_lib.sv(29) @ 0: uvm_test_top [MEM_BASE_TEST] context = '{m_leaf_name:"", m_inst_id:16, use_uvm_seeding:1, m_inst_count:768, __m_uvm_status_container:@uvm_status_container@1, uvm_global_copy_map:'{ }, m_rh:@uvm_report_handler@2, enable_stop_interrupt:0, print_enabled:1, tr_database:null, m_domain:@uvm_domain@2, m_phase_imps:'{ }, m_current_phase:@uvm_phase@6, m_phase_process:null, m_build_done:1, m_phasing_active:0, m_parent:null, m_children:'{"uvm_test_top":@mem_base_test@1 }, m_children_by_handle:'{@mem_base_test@1:@mem_base_test@1 }, m_main_stream:null, m_streams:'{ }, m_tr_h:'{ }, m_name:"", event_pool:null, recording_detail:0, m_verbosity_settings:'{}, m_config_deprecated_warned:0, m_config_set:1, print_config_matches:0, type_name:"uvm_component", m_time_settings:'{}, m_uvm_applied_cl_action:'{}, m_uvm_applied_cl_sev:'{}, clp:@uvm_cmdline_processor@1, finish_on_completion:1, top_levels:'{@mem_base_test@1}, enable_print_topology:0, phase_timeout:9200000000000, m_phase_all_done:0, m_inst:@uvm_root@1, m_relnotes_done:1}
+# UVM_INFO mem_env.sv(26) @ 0: uvm_test_top.mem_env_h [MEM_ENV] PASS count_t = 20
+# UVM_INFO mem_agent.sv(34) @ 0: uvm_test_top.mem_env_h.mem_agent_h [MEM_AGENT] PASS count_t = 20
+# UVM_INFO mem_drv.sv(16) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_drv_h [MEM_DRV] run_phase of MEM_DRV
+# UVM_INFO ahb_drv.sv(26) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_drv_h [ahb_drv] run_phase of ahb_drv
+# UVM_INFO ahb_drv.sv(30) @ 0: uvm_test_top.mem_env_h.ahb_agent_h.ahb_drv_h [uvm_test_top.mem_env_h.ahb_agent_h.ahb_drv_h] auto-retrival of count = 20
+# UVM_INFO sequence_lib.sv(8) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@seq [MEM_BASE_SEQ] pre_body of MEM_BASE_SEQ
+# UVM_INFO sequence_lib.sv(12) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@seq [MEM_BASE_SEQ] body of MEM_BASE_SEQ
+# UVM_INFO sequence_lib.sv(16) @ 0: uvm_test_top.mem_env_h.mem_agent_h.mem_sqr_h@@seq [MEM_BASE_SEQ] post_phase of MEM_BASE_SEQ
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_objection.svh(1270) @ 100: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_report_server.svh(847) @ 100: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# Quit count :     0 of    10
+# ** Report counts by severity
+# UVM_INFO :   26
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [MAXQUITSET]     1
+# [MEM_AGENT]     3
+# [MEM_BASE_SEQ]     3
+# [MEM_BASE_TEST]     4
+# [MEM_DRV]     2
+# [MEM_ENV]     2
+# [MEM_SQR]     1
+# [RNTST]     1
+# [TEST_DONE]     1
+# [TOP]     1
+# [UVM/RELNOTES]     1
+# [ahb_agent]     2
+# [ahb_drv]     2
+# [ahb_sqr]     1
+# [uvm_test_top.mem_env_h.ahb_agent_h.ahb_drv_h]     1
+# 
+# ** Note: $finish    : /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 100 ns  Iteration: 67  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at /home/koushiks/Desktop/UVM_JUNE_2024/uvm-1.2/src/base/uvm_root.svh line 517
